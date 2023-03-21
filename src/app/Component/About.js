@@ -50,7 +50,7 @@ const About = () => {
             <Row>
               <div className="Border">
                 <p>
-                  I'm a Software Developer with a Bachelor of Science
+                  I&#39;m a Software Developer with a Bachelor of Science
                   in Computer Science degree, with an interest in Fullstack applications.
                 </p>
               </div>

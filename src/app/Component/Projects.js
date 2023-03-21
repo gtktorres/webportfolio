@@ -5,9 +5,9 @@ import Portrait from "../portrait.jpg";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Contact from "./Modal";
-import Toxic from "./Project-Images/toxic.PNG";
-import Repaycycle from "./Project-Images/repaycycle.PNG";
-import InteractiveStory from "./Project-Images/InteractiveStory.PNG";
+import Toxic from "./Project-Images/toxic.png";
+import Repaycycle from "./Project-Images/repaycycle.png";
+import InteractiveStory from "./Project-Images/InteractiveStory.png";
 import github from "./Project-Images/github.ico";
 import Image from "next/image";
 
@@ -136,7 +136,7 @@ const Projects = () => {
                     <li>
                       Our application is designed to associate with upgraded
                       versions of reverse vending recycling machines similar to
-                      those found at supermarkets as well as a user's bank
+                      those found at supermarkets as well as a user&#39;s bank
                       account.
                     </li>
                     <li>
