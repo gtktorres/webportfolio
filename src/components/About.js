@@ -1,7 +1,7 @@
 "use client"; // this is a client component 👈🏽
 import React from "react";
-import "../Client.css"
-import Portrait from "../portrait.jpg";
+import '../styles/client.css'
+import Portrait from '../components/Project-Images/portrait.jpg'
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Contact from "./Modal";

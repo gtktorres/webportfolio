@@ -1,14 +1,14 @@
 
 "use client"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import About from "./Component/About";
-import Home from "./Component/Home";
-import Projects from "./Component/Projects";
+import About from '../components/About'
+import Home from '../components/Home'
+import Projects from '../components/Projects'
 import React, { Component } from 'react';
 
 
       
-export class Client extends Component {
+export default class Client extends Component {
     render() {
         return (
             <Router>                                                                        
