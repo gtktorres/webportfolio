@@ -1,14 +1,14 @@
 "use client"; // this is a client component 👈🏽
 import React from "react";
-import "../Client.css"
-import Portrait from "../portrait.jpg";
+import '../styles/client.css'
+import Portrait from '../components/Project-Images/portrait.jpg'
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Contact from "./Modal";
-import Toxic from "./Project-Images/toxic.png";
-import Repaycycle from "./Project-Images/repaycycle.png";
-import InteractiveStory from "./Project-Images/InteractiveStory.png";
-import github from "./Project-Images/github.ico";
+import Contact from "../components/Modal";
+import Toxic from "../components/Project-Images/toxic.png";
+import Repaycycle from "../components//Project-Images/repaycycle.png";
+import InteractiveStory from "../components//Project-Images/InteractiveStory.png";
+import github from "../components//Project-Images/github.ico";
 import Image from "next/image";
 
 const Projects = () => {
