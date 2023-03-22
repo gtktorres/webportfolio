@@ -6,9 +6,7 @@ import Home from '../components/Home'
 import Projects from '../components/Projects'
 import React, { Component } from 'react';
 import '../styles/client.css'
-
-
-      
+import Navbar from '../components/Navbar'
 export default class Client extends Component {
     render() {
         return (

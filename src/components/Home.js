@@ -11,10 +11,6 @@ const Home = () => {
 
   return (
         <Container>
-          
-          <Row >
-            <h1>Guevara Torres</h1>
-          </Row>
           <Row>
             <Col>
               <Image height={500} width={370} src={Portrait} className="App-port" alt="Portrait" />

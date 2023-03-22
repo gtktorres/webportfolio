@@ -35,7 +35,7 @@ import { useState } from 'react';
               linkedin.com/in/guevara-torres
             </p>
             
-            <Button className="Button3 center"
+            <Button className="Button3"
               type="Button"
               variant="primary" 
               onClick={() => setIsOpen(false)}>

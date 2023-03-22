@@ -15,9 +15,6 @@ const Projects = () => {
     return (
         <Container>
           
-          <Row>
-            <h1>Guevara Torres</h1>
-          </Row>
           
           <Col>
             <Image height={500} width={370} src={Portrait} className="App-port" alt="Portrait" />
@@ -65,7 +62,14 @@ const Projects = () => {
               </Row>
               <Row>
                 <Col>
-                  <Image src={InteractiveStory} width="300" height="300" alt="Thanos" />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Image src={InteractiveStory} width="300" height="300" alt="Thanos" />
+                  </div>
                 </Col>
                 <Col>
                   <ul>
@@ -95,7 +99,14 @@ const Projects = () => {
               </Row>
               <Row>
                 <Col>
-                  <Image src={Toxic} height="300" alt="Toxic Model" />
+                <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Image src={Toxic} height="300" alt="Toxic Model" />
+                  </div>
                 </Col>
                 <Col>
                   <ul>
@@ -129,7 +140,14 @@ const Projects = () => {
               </Row>
               <Row>
                 <Col>
-                <Image src={Repaycycle} height="300" alt="Repaycycle" />
+                <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Image src={Repaycycle} height="300" alt="Repaycycle" />
+                  </div>                
                 </Col>
                 <Col>
                   <ul>

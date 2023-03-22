@@ -4,19 +4,24 @@ import styles from '../styles/page.module.css'
 import dynamic from "next/dynamic";
 import '../styles/globals.css'
 
-
 const Client = dynamic(
   () => {
     return import('./client');
   },
   { ssr: false }
 );
-
+// const Navbar = dynamic(
+//   () => {
+//     return import('../components/Navbar');
+//   },
+//   { ssr: false }
+// );
 const inter = Inter({ subsets: ['latin'] })
 
 export default function page() {
   return (
     <main className={styles.main}>
+        {/* < Navbar /> */}
         < Client/>
     </main>
   )
