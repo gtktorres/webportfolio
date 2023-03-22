@@ -97,12 +97,11 @@
 
 body {  
   background-image: url(../components/Project-Images/background.png);
-  overflow: initial;
   background-color: bisque;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow: scroll;
+  overflow: auto;
   height: 100vh;
 
 }
