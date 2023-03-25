@@ -1,14 +1,10 @@
 import Link from "next/link";
+import '../styles/globals.css'
+
 const NavItem = ({ text, href, active }) => {
   return (
-    <Link href={href}>
-      <a
-        className={`nav__item ${
-          active ? "active" : ""
-        }`}
-      >
+    <Link href={href} className={`nav__item ${ active ? "active" : "" }`}>
         {text}
-      </a>
     </Link>
   );
 };

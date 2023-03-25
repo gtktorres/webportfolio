@@ -1,11 +1,10 @@
 "use client"
 import Link from "next/link";
-import Image from "next/image";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
-  { text: "Home", href: "/" },
+  { text: "", href: "/" },
   { text: "About Me", href: "/about" },
   { text: "Projects", href: "/projects" },
   { text: "Contact", href: "/contact" },
@@ -18,9 +17,7 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-          <a>
             <h1 className="logo">Guevara Torres</h1>
-          </a>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}

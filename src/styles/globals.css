@@ -155,6 +155,11 @@ nav{
   min-height: calc(100vh - 60px);
   background-color: lightblue
 }
+.nav__item{
+  font-size: 2em;
+  font-style: bold;
+  color: purple;
+}
 .nav__menu-list.active{
   right: 0;
 }
