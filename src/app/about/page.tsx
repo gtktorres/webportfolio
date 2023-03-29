@@ -23,7 +23,7 @@ const About = () => {
         <div className="Border">
           <p>
             I&#39;m a Software Developer with a Bachelor of Science in Computer
-            Science degree, with an interest in Fullstack applications.
+            Science degree. Interested in Fullstack applications and based in Denver, Colorado.
           </p>
         </div>
       </main>
