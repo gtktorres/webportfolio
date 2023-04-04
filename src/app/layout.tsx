@@ -10,8 +10,8 @@ const Navbar = dynamic(
 );
 
 export const metadata = {
-  title: 'Welcome to guevaratorres.space!',
-  description: 'Welcome to Next.js',
+  title: '🔥Guevara Torres🔥',
+  description: 'Portfolio',
 }
 
 export default function RootLayout({
