@@ -10,7 +10,10 @@ const Navbar = dynamic(
 );
 
 export const metadata = {
-  title: '🔥Guevara Torres🔥',
+  icons: {
+    icon: 'https://em-content.zobj.net/thumbs/120/twitter/348/sunrise-over-mountains_1f304.png'
+  },
+  title: 'Guevara Torres',
   description: 'Portfolio',
 }
 
