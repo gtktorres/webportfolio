@@ -2,6 +2,8 @@
 import React from "react";
 import '../../styles/client.css'
 import Link from "next/link";
+import Graphs from "../../components/Project-Images/graph_access.png";
+import Warhammer from "../../components/Project-Images/warhammer.png";
 import Toxic from "../../components/Project-Images/toxic.png";
 import Repaycycle from "../../components//Project-Images/repaycycle.png";
 import InteractiveStory from "../../components//Project-Images/InteractiveStory.png";
@@ -18,7 +20,7 @@ const Projects = () => {
         </div>
         <div className="Border">
           <h3>
-            Old-School DnD Interactive Story
+            Old-School DnD Interactive Story - IN PROGRESS
             <Link href="https://github.com/gtktorres/StoneMarbel-Old-School-MERNG">
               <Image src={github} height="25" alt="old-school DnD" />{" "}
             </Link>
@@ -49,7 +51,63 @@ const Projects = () => {
             </li>
           </ul>
         </div>
-
+        <div className="Border">
+                <h3>
+                  Making Graphs More Accessible - IN PROGRESS
+                  <Link href="https://github.com/gtktorres/Making-Graphs-Accessible">
+                    <Image src={github} height="25" alt="Make Graphs Accessible" />{" "}
+                  </Link>
+                </h3>
+                <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Image src={Graphs} height="300" alt="Make Graphs Accessible" />
+                  </div>
+                  <ul>
+                    <li>
+                      This app extracts data represented by five types of charts 
+                      commonly found in STEM textbooks. Making graphs accessible 
+                      to millions of students with a learning difference or 
+                      disability that prevents a person from reading conventional print.
+                    </li>
+                    <li>
+                      Implemented with Python and Tensorflow, the Graph data
+                      provided for the competition trained the model in order to
+                      make reading graphs accessible to millions of students with 
+                      a learning difference or disability.
+                    </li>
+                  </ul>
+            </div>
+        <div className="Border">
+                <h3>
+                Javascript Automation for GW Purchases
+                  <Link href="https://github.com/gtktorres/Javascript-Automation-for-GW-Purchases">
+                    <Image src={github} height="25" alt="JS Automation" />{" "}
+                  </Link>
+                </h3>
+                <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <Image src={Warhammer} height="300" alt="JS Automation" />
+                  </div>
+                  <ul>
+                    <li>
+                      When you know what you want, but have to deal with scalpers!
+                    </li>
+                    <li>
+                      Implemented with Javascript, Reactjs, dotenv, and puppeteer-core, the data
+                      provided to assist automation was procured through the use of 
+                      Headless Recorder and debugged to provide a quick way to purchase items
+                      when scalpers have a tendency to buyout online stock.
+                    </li>
+                  </ul>
+            </div>    
         <div className="Border">
                 <h3>
                   Toxic Comment Model
@@ -69,7 +127,7 @@ const Projects = () => {
                     <li>
                       Can identify toxicity in online conversations, where
                       toxicity is defined as anything rude, disrespectful or
-                      otherwise likely to make someone leave a discussion
+                      otherwise likely to make someone leave a discussion.
                     </li>
                     <li>
                       Implemented with Python and Tensorflow, the English data
