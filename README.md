@@ -1,4 +1,4 @@
-This is a Next.js project that I use for my [website](https://guevaratorres.space)
+A Next.js project that I use for my [website](https://guevaratorres.space).
 
 ## Getting Started
 
