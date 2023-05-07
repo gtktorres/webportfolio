@@ -9,10 +9,9 @@ import Repaycycle from "../../components//Project-Images/repaycycle.png";
 import InteractiveStory from "../../components//Project-Images/InteractiveStory.png";
 import github from "../../components//Project-Images/github.ico";
 import Image from "next/image";
+import styles from '../../styles/page.module.css';
 
-import styles from '../../styles/page.module.css'
-
-const Projects = () => {
+  const Projects = () => {
     return (
       <main className={styles.main}>
         <div className="Projects">
@@ -22,7 +21,7 @@ const Projects = () => {
           <h3>
             Old-School DnD Interactive Story - IN PROGRESS
             <Link href="https://github.com/gtktorres/StoneMarbel-Old-School-MERNG">
-              <Image src={github} height="25" alt="old-school DnD" />{" "}
+              <Image src={github} height="25" alt="old-school DnD"/>{" "}
             </Link>
           </h3>
           <div
@@ -31,12 +30,14 @@ const Projects = () => {
               justifyContent: "center",
             }}
           >
-            <Image
-              src={InteractiveStory}
-              width="300"
-              height="300"
-              alt="old-school DnD"
-            />
+            <Link href="/RCSB">
+              <Image
+                src={InteractiveStory}
+                width="300"
+                height="300"
+                alt="old-school DnD"
+              />
+            </Link>
           </div>
           <ul>
             <li>
@@ -169,6 +170,7 @@ const Projects = () => {
             </div>
       </main>
     );
-}
+  }
 
-export default Projects;
+  export default Projects;
+
