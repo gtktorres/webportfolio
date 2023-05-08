@@ -7,7 +7,7 @@ const nextConfig = {
     return [
       {
         source: '/RCSB',
-        destination: '/html/Rat Catcher Scumbag .html'
+        destination: '/public/html/Rat Catcher Scumbag .html'
       },
     ]
   }
