@@ -9,7 +9,7 @@ import { typeDefs } from './typeDefs';
 import { resolvers } from './resolvers';
 
 dotenv.config()
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 42069;
 const DB = process.env.ATLAS_URI;
 
 const startServer = async () => {
@@ -30,9 +30,7 @@ const startServer = async () => {
     .catch(() => { console.log("Error Connecting to the Mongodb Database") })
     
 
-    app.listen({ port: port }, () =>
-        console.log(`🎲🎲 http://localhost:${port}/graphql`)
-    );
+    app.listen({ port: port });
 };
 
 startServer();
