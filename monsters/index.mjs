@@ -6,7 +6,8 @@ import pkg from 'body-parser';
 const {json} = pkg;
 import express from 'express';
 import mongoose from 'mongoose';
-import { typeDefs } from './typeDefs.js';
+import defs from './typeDefs.js';
+const { typeDefs } = defs;
 import res from './resolvers.js';
 const { resolvers } = res;
 
