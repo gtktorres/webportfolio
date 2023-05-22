@@ -7,7 +7,8 @@ const {json} = pkg;
 import express from 'express';
 import mongoose from 'mongoose';
 import { typeDefs } from './typeDefs.js';
-import { resolvers } from './resolvers.js';
+import res from './resolvers.js';
+const { resolvers } = res;
 
 dotenv.config()
 const port = process.env.PORT || 80;
