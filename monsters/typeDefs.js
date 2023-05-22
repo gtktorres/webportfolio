@@ -1,4 +1,4 @@
-export const typeDefs = `
+const typeDefs = `
     type Query {
         monsters: [Monster!]!
         monster(name: String!): Monster!
@@ -45,3 +45,5 @@ export const typeDefs = `
         ): Monster!
     }
 `;
+
+module.exports = typeDefs;
