@@ -1,6 +1,6 @@
 import { Monster, Monsters } from './models/Monster.mjs'
 
-export const resolvers = {
+export default resolvers = {
     Query: {
         monsters: async () => await Monsters.find(),
         async monster (parent, args, context, info) {
