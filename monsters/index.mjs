@@ -8,8 +8,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import defs from './typeDefs.js';
 const { typeDefs } = defs;
-import { res } from './resolvers.mjs';
-const resolvers = res;
+import resolvers from './resolvers.mjs';
+const { res } = resolvers;
 
 dotenv.config()
 const port = process.env.PORT || 59999;
@@ -21,7 +21,7 @@ const startServer = async () => {
 
     const server = new ApolloServer({
     typeDefs,
-    resolvers,
+    res,
     });
 
     await server.start();
