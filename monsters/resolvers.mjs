@@ -51,3 +51,20 @@ export const resolvers = {
         }
     }
 };
+
+async function findMonster(monsterName) {
+    const monsterList = await Monster.findOne({monsterName});
+    console.log(monsterList);
+    tonsole.log(monsterList);
+    // const foundMonster = await qsearch(monsterList, monsterName);
+    // console.log(foundMonster);
+    // return foundMonster;
+}
+
+async function qsearch( monsterList, monsterName) {
+    console.log(typeof monsterList);
+    for(var monster in monsterList) {
+        console.log(monster);
+        if(monster.name === monsterName) return monster;
+    }
+}
