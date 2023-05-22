@@ -6,7 +6,7 @@ import pkg from 'body-parser';
 const {json} = pkg;
 import express from 'express';
 import mongoose from 'mongoose';
-import typeDefs from './typeDefs.js';
+import typeDefs from './typeDefs.mjs';
 import resolvers from './resolvers.mjs';
 
 dotenv.config()
