@@ -1,13 +1,15 @@
 {
-  "name": "monsters_server",
+  "name": "webportfolio",
   "version": "1.0.0",
   "description": "get monsters or get monster, maybe more",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon --exec babel-node server/index.js",
-    "build": "node build server/index.js",
-    "start": "npm run build"
+    "build": "babel src -d monsters",
+    "start": "node --use_strict ./monsters/index.js",
+    "watch": "nodemon --exec \"npm run build && node monsters/index.js\" -e js --ignore monsters/"
+  
   },
   "repository": {
     "type": "git",
