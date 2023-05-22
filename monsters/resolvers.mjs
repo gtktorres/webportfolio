@@ -52,4 +52,4 @@ const resolvers = {
     }
 };
 
-export default resolvers;
+module.export = resolvers;
