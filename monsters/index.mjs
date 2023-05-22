@@ -9,7 +9,6 @@ import mongoose from 'mongoose';
 import defs from './typeDefs.js';
 const { typeDefs } = defs;
 import resolvers from './resolvers.mjs';
-const { res } = resolvers;
 
 dotenv.config()
 const port = process.env.PORT || 59999;
@@ -21,7 +20,7 @@ const startServer = async () => {
 
     const server = new ApolloServer({
     typeDefs,
-    res,
+    resolvers,
     });
 
     await server.start();
