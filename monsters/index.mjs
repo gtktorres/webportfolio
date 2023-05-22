@@ -2,7 +2,8 @@ import * as dotenv from 'dotenv'
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
 import cors from 'cors';
-import { json } from 'body-parser';
+import pkg from 'body-parser';
+const {json} = pkg;
 import express from 'express';
 import mongoose from 'mongoose';
 import { typeDefs } from './typeDefs.js';
