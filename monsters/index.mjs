@@ -8,7 +8,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import defs from './typeDefs.js';
 const { typeDefs } = defs;
-import res from './resolvers.mjs';
+import { default as res } from './resolvers.mjs';
 const { resolvers } = res;
 
 dotenv.config()
