@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "build": "babel src -d monsters",
+    "build": "babel monsters",
     "start": "node --use_strict ./monsters/index.js",
     "watch": "nodemon --exec \"npm run build && node monsters/index.js\" -e js --ignore monsters/"
   
