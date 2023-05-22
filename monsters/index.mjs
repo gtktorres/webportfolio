@@ -3,7 +3,7 @@ import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
 import cors from 'cors';
 import {pkg} from 'body-parser';
-const json = pkg;
+const {json} = pkg;
 import express from 'express';
 import mongoose from 'mongoose';
 import { typeDefs } from './typeDefs.js';
