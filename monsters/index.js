@@ -5,8 +5,8 @@ import cors from 'cors';
 import {json} from 'body-parser';
 import express from 'express';
 import mongoose from 'mongoose';
-import { typeDefs } from './typeDefs.js';
-import { resolvers } from './resolvers.js';
+import { typeDefs } from './typeDefs';
+import { resolvers } from './resolvers';
 
 dotenv.config()
 const port = process.env.PORT || 42069;

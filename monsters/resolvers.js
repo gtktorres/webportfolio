@@ -1,4 +1,4 @@
-import { Monster, Monsters } from './models/Monster.js'
+import { Monster, Monsters } from './models/Monster'
 
 export const resolvers = {
     Query: {
