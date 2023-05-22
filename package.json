@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "get monsters or get monster, maybe more",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "build": "babel monsters",
