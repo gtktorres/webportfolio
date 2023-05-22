@@ -8,8 +8,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import defs from './typeDefs.js';
 const { typeDefs } = defs;
-import { res } from './resolvers.mjs';
-const { resolvers } = res;
+import { resolvers } from './resolvers.mjs';
 
 dotenv.config()
 const port = process.env.PORT || 59999;
