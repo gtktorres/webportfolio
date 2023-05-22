@@ -12,7 +12,7 @@ import res from './resolvers.mjs';
 const { resolvers } = res;
 
 dotenv.config()
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 59999;
 const DB = process.env.ATLAS_URI;
 
 const startServer = async () => {
