@@ -20,7 +20,7 @@ const startServer = async () => {
     const server = new ApolloServer({
     typeDefs,
     resolvers,
-    introspection : true                //allows production access???
+    introspection : true                //allows production access
     });
 
     await server.start();
