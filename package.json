@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "dev": "nodemon --exec babel-node ./monsters/index.mjs",
     "build": "babel monsters",
     "start": "node --use_strict ./monsters/index.mjs",
     "watch": "nodemon --exec \"npm run build && node monsters/index.mjs\" -e js --ignore monsters/"
