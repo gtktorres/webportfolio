@@ -10,7 +10,7 @@ import typeDefs from './typeDefs.mjs';
 import resolvers from './resolvers.mjs';
 
 dotenv.config()
-const port = process.env.PORT || 59999;
+const port = process.env.PORT;
 const DB = process.env.ATLAS_URI;
 
 const startServer = async () => {
