@@ -27,7 +27,7 @@ const startServer = async () => {
 
     app.use('/', cors(), json(), expressMiddleware(server));
 
-    await mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true, family: 4 })
+    await mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true, family: 4 })      //exclusively looks on IPv4
     .then(() => { console.log("Succesfully Connected to Old School Database") })   
     .catch((err) => { console.log(err + " => Error Connecting to the Mongodb Database") })
     
