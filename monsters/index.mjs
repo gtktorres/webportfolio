@@ -24,7 +24,7 @@ const startServer = async () => {
 
     await server.start();
 
-    app.use('/graphql', cors(), json(), expressMiddleware(server));
+    app.use('/', cors(), json(), expressMiddleware(server));
 
     await mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => { console.log("Succesfully Connected to Old School Database") })   
