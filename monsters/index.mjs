@@ -20,7 +20,7 @@ const startServer = async () => {
     const server = new ApolloServer({
     typeDefs,
     resolvers,
-    introspection : true
+    introspection : true                //allows production access???
     });
 
     await server.start();
@@ -29,7 +29,7 @@ const startServer = async () => {
 
     await mongoose.connect(DB, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => { console.log("Succesfully Connected to Old School Database") })   
-    .catch(() => { console.log("Error Connecting to the Mongodb Database") })
+    .catch((err) => { console.log(err + " => Error Connecting to the Mongodb Database") })
     
 
     app.listen({ port: port });
