@@ -1,35 +1,6 @@
 {
-  "name": "webportfolio",
-  "version": "1.0.0",
-  "description": "get monsters or get monster, maybe more",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "dev": "nodemon --exec babel-node ./monsters/index.mjs",
-    "build": "babel monsters",
-    "start": "node --use_strict ./monsters/index.mjs",
-    "watch": "nodemon --exec \"npm run build && node monsters/index.mjs\" -e js --ignore monsters/"
-  
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gtktorres/monsters_server.git"
-  },
-  "author": "Guevara Torres",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gtktorres/monsters_server/issues"
-  },
-  "homepage": "https://github.com/gtktorres/monsters_server#readme",
-  "dependencies": {
-    "@apollo/server": "^4.7.1",
-    "@babel/cli": "^7.21.5",
-    "@babel/core": "^7.21.8",
-    "@babel/node": "^7.20.7",
-    "@babel/preset-env": "^7.21.5",
-    "dotenv": "^16.0.3",
-    "graphql": "^16.6.0",
-    "mongoose": "^7.1.1",
-    "nodemon": "^2.0.22"
-  }
+    "name": "webport-workspace-nexus",
+    "workspaces": [
+        "packages/*"
+    ]
 }
