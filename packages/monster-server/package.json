@@ -1,26 +1,26 @@
 {
-  "name": "webportfolio",
+  "name": "monster-server",
   "version": "1.0.0",
   "description": "get monsters or get monster, maybe more",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "nodemon --exec babel-node ./monsters/index.mjs",
+    "dev": "nodemon --exec babel-node ./index.mjs",
     "build": "babel monsters",
-    "start": "node --use_strict ./monsters/index.mjs",
-    "watch": "nodemon --exec \"npm run build && node monsters/index.mjs\" -e js --ignore monsters/"
+    "start": "node --use_strict ./index.mjs",
+    "watch": "nodemon --exec \"npm run build && node ./index.mjs\" -e js --ignore monster-server/"
   
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gtktorres/monsters_server.git"
+    "url": "git+https://github.com/gtktorres/monster-server.git"
   },
   "author": "Guevara Torres",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gtktorres/monsters_server/issues"
+    "url": "https://github.com/gtktorres/monster-server/issues"
   },
-  "homepage": "https://github.com/gtktorres/monsters_server#readme",
+  "homepage": "https://github.com/gtktorres/monster-server#readme",
   "dependencies": {
     "@apollo/server": "^4.7.1",
     "@babel/cli": "^7.21.5",

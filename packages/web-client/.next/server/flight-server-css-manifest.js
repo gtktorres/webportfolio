@@ -1,0 +1,25 @@
+self.__RSC_CSS_MANIFEST={
+  "__entry_css_mods__": {
+    "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\app\\page": [
+      "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\globals.css",
+      "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\client.css"
+    ],
+    "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\app\\projects\\page": [
+      "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\globals.css",
+      "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\client.css",
+      "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\page.module.css"
+    ]
+  },
+  "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\app\\page.tsx": [
+    "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\node_modules\\next\\font\\google\\target.css?{\"path\":\"src\\\\app\\\\page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}",
+    "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\globals.css"
+  ],
+  "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\app\\layout.tsx": [
+    "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\globals.css",
+    "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\client.css"
+  ],
+  "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\app\\projects\\page.tsx": [
+    "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\client.css",
+    "C:\\Users\\Hg\\webportfolio_monorepo\\webportfolio\\packages\\web-client\\src\\styles\\page.module.css"
+  ]
+}
