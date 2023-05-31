@@ -17,7 +17,34 @@
 
 a {
   color: gold;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="The Beginning" tags="" position="800,325" size="100,100">The citizens of Irk, a city-state of the Lytassian continent have experienced strange dreams induced by the long forgotten lich Xiximanter and his ill-begotten experiments. As the only Sparrow in residence, the Order has assigned the task of investigation to you. And upon further inspection, a landslide has revealed the tomb&#39;s entrance a days travel away. With a map to a long-forgotten tomb and some hirelings, you collect your things and take to the road.
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">import {GetMonster} from "../../../packages/web-client/src/app/api/monster/route.tsx";
+export class monster{
+	_id: String;  
+    name: String; 
+    AC: Number; 
+    HD: Number; 
+    Att: String; 
+    THAC0: Number; 
+    MV: Number; 
+    D: Number; 
+    W: Number; 
+    P: Number; 
+    B: Number; 
+    S: Number; 
+    ML: Number; 
+    AL: String; 
+    XP: Number; 
+    NA: String; 
+    TT: String;
+  
+  constructor(){
+  }
+  
+  function monsterStats(name){
+  		return GetMonster(name);
+  }
+}
+</script><tw-passagedata pid="1" name="The Beginning" tags="" position="800,325" size="100,100">The citizens of Irk, a city-state of the Lytassian continent have experienced strange dreams induced by the long forgotten lich Xiximanter and his ill-begotten experiments. As the only Sparrow in residence, the Order has assigned the task of investigation to you. And upon further inspection, a landslide has revealed the tomb&#39;s entrance a days travel away. With a map to a long-forgotten tomb and some hirelings, you collect your things and take to the road.
 
 The road veers from the time-stained map into brush. A score pace later, the brush clears for twenty feet or so. Littered on the ground are the remains of what appears to be varied juvenile boar appendages and endtrails.
 
