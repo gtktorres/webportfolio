@@ -18,7 +18,9 @@
 a {
   color: gold;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">import {GetMonster} from "../../../packages/web-client/src/app/api/monster/route.tsx";
+
 export class monster{
+  
 	_id: String;  
     name: String; 
     AC: Number; 
@@ -40,9 +42,11 @@ export class monster{
   constructor(){
   }
   
-  function monsterStats(name){
-  		return GetMonster(name);
+  function async Stats(name){    
+    var monsterInstance = await GetMonster(name);
+  	return monsterInstance;
   }
+  
 }
 </script><tw-passagedata pid="1" name="The Beginning" tags="" position="800,325" size="100,100">The citizens of Irk, a city-state of the Lytassian continent have experienced strange dreams induced by the long forgotten lich Xiximanter and his ill-begotten experiments. As the only Sparrow in residence, the Order has assigned the task of investigation to you. And upon further inspection, a landslide has revealed the tomb&#39;s entrance a days travel away. With a map to a long-forgotten tomb and some hirelings, you collect your things and take to the road.
 
@@ -51,7 +55,8 @@ The road veers from the time-stained map into brush. A score pace later, the bru
 Then from the opposite brush a snarling bloody Boar appears. Bathed in red. One of your varlets squeals, &quot;Ay Missus, by the Order! What shall we do with this red horror!&quot;
 
 &lt;%
-s.BoarHD = 3;
+s.Boar = monster.Stats(&quot;Boar&quot;);
+s.BoarHD = s.Boar.HD;
 s.Vanthani = 18;
 %&gt;
 
