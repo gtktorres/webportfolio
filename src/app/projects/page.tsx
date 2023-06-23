@@ -20,7 +20,38 @@ const Projects = () => {
         </div>
         <div className="Border">
           <h3>
-            Old-School DnD Interactive Story - IN PROGRESS
+            Excel Budgeting Tool – IN PROGRESS
+            <Link href="https://github.com/gtktorres/ExcelBudgetingTool">
+              <Image src={github} height="25" alt="Excel Budgeting Tool" />{" "}
+            </Link>
+          </h3>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Image
+              src={InteractiveStory}
+              width="300"
+              height="300"
+              alt="Excel Budgeting Tool"
+            />
+          </div>
+          <ul>
+            <li>
+              This project can automate the process of creating and managing budgets by using Excel
+              spreadsheets to track expenses and income.
+            </li>
+            <li>
+              With C# and Excel automation, the tool can automatically calculate the budget for each
+              category and generate reports that show how the budget is being spent over time.
+            </li>
+          </ul>
+        </div>
+        <div className="Border">
+          <h3>
+            Old-School DnD Interactive Story
             <Link href="https://github.com/gtktorres/StoneMarbel-Old-School-MERNG">
               <Image src={github} height="25" alt="old-school DnD" />{" "}
             </Link>
@@ -53,7 +84,7 @@ const Projects = () => {
         </div>
         <div className="Border">
                 <h3>
-                  Making Graphs More Accessible - IN PROGRESS
+                  Making Graphs More Accessible
                   <Link href="https://github.com/gtktorres/Making-Graphs-Accessible">
                     <Image src={github} height="25" alt="Make Graphs Accessible" />{" "}
                   </Link>
