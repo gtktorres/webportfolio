@@ -1,6 +1,6 @@
-/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[3]!./src/styles/client.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./src/styles/client.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
 .Header {
   font-style: bold;
   text-align: center;  
@@ -182,10 +182,10 @@ h5 {
   border-width: 1px;
 }
 
-/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ../../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!../../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./src/styles/page.module.css ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************/
-.page_main__BSx3P {
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/styles/page.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+.page_main__xXfsr {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -194,7 +194,7 @@ h5 {
   min-height: 100vh;
 }
 
-.page_description__zdUcg {
+.page_description__bNOiT {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -205,14 +205,14 @@ h5 {
   font-family: var(--font-mono);
 }
 
-.page_description__zdUcg a {
+.page_description__bNOiT a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
 
-.page_description__zdUcg p {
+.page_description__bNOiT p {
   position: relative;
   margin: 0;
   padding: 1rem;
@@ -221,19 +221,19 @@ h5 {
   border-radius: var(--border-radius);
 }
 
-.page_code__asNLS {
+.page_code__wBbdK {
   font-weight: 700;
   font-family: var(--font-mono);
 }
 
-.page_grid__S68Bl {
+.page_grid__HaXhD {
   display: grid;
   grid-template-columns: repeat(3, minmax(33%, auto));
   width: var(--max-width);
   max-width: 100%;
 }
 
-.page_card__GWmgS {
+.page_card__XqPvz {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
@@ -241,17 +241,17 @@ h5 {
   transition: background 200ms, border 200ms;
 }
 
-.page_card__GWmgS span {
+.page_card__XqPvz span {
   display: inline-block;
   transition: transform 200ms;
 }
 
-.page_card__GWmgS h2 {
+.page_card__XqPvz h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
 }
 
-.page_card__GWmgS p {
+.page_card__XqPvz p {
   margin: 0;
   opacity: 0.6;
   font-size: 0.9rem;
@@ -259,7 +259,7 @@ h5 {
   max-width: 34ch;
 }
 
-.page_center__VT_8I {
+.page_center__aD5vH {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,7 +267,7 @@ h5 {
   padding: 4rem 0;
 }
 
-.page_center__VT_8I::before {
+.page_center__aD5vH::before {
   background: var(--secondary-glow);
   border-radius: 50%;
   width: 480px;
@@ -275,15 +275,15 @@ h5 {
   margin-left: -400px;
 }
 
-.page_center__VT_8I::after {
+.page_center__aD5vH::after {
   background: var(--primary-glow);
   width: 240px;
   height: 180px;
   z-index: -1;
 }
 
-.page_center__VT_8I::before,
-.page_center__VT_8I::after {
+.page_center__aD5vH::before,
+.page_center__aD5vH::after {
   content: '';
   left: 50%;
   position: absolute;
@@ -291,12 +291,12 @@ h5 {
   transform: translateZ(0);
 }
 
-.page_logo__Ln0xD,
-.page_thirteen__3t8_c {
+.page_logo__4wOtS,
+.page_thirteen__bBDev {
   position: relative;
 }
 
-.page_thirteen__3t8_c {
+.page_thirteen__bBDev {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,23 +310,23 @@ h5 {
   box-shadow: 0px 2px 8px -1px #0000001a;
 }
 
-.page_thirteen__3t8_c::before,
-.page_thirteen__3t8_c::after {
+.page_thirteen__bBDev::before,
+.page_thirteen__bBDev::after {
   content: '';
   position: absolute;
   z-index: -1;
 }
 
 /* Conic Gradient Animation */
-.page_thirteen__3t8_c::before {
-  animation: 6s page_rotate__nOICZ linear infinite;
+.page_thirteen__bBDev::before {
+  animation: 6s page_rotate__YkJws linear infinite;
   width: 200%;
   height: 200%;
   background: var(--tile-border);
 }
 
 /* Inner Square */
-.page_thirteen__3t8_c::after {
+.page_thirteen__bBDev::after {
   inset: 0;
   padding: 1px;
   border-radius: var(--border-radius);
@@ -340,73 +340,73 @@ h5 {
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-  .page_card__GWmgS:hover {
+  .page_card__XqPvz:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 
-  .page_card__GWmgS:hover span {
+  .page_card__XqPvz:hover span {
     transform: translateX(4px);
   }
 }
 
 @media (prefers-reduced-motion) {
-  .page_thirteen__3t8_c::before {
+  .page_thirteen__bBDev::before {
     animation: none;
   }
 
-  .page_card__GWmgS:hover span {
+  .page_card__XqPvz:hover span {
     transform: none;
   }
 }
 
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
-  .page_content__gop5m {
+  .page_content__5y_VA {
     padding: 4rem;
   }
 
-  .page_grid__S68Bl {
+  .page_grid__HaXhD {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
   }
 
-  .page_card__GWmgS {
+  .page_card__XqPvz {
     padding: 1rem 2.5rem;
   }
 
-  .page_card__GWmgS h2 {
+  .page_card__XqPvz h2 {
     margin-bottom: 0.5rem;
   }
 
-  .page_center__VT_8I {
+  .page_center__aD5vH {
     padding: 8rem 0 6rem;
   }
 
-  .page_center__VT_8I::before {
+  .page_center__aD5vH::before {
     transform: none;
     height: 300px;
   }
 
-  .page_description__zdUcg {
+  .page_description__bNOiT {
     font-size: 0.8rem;
   }
 
-  .page_description__zdUcg a {
+  .page_description__bNOiT a {
     padding: 1rem;
   }
 
-  .page_description__zdUcg p,
-  .page_description__zdUcg div {
+  .page_description__bNOiT p,
+  .page_description__bNOiT div {
     display: flex;
     justify-content: center;
     position: fixed;
     width: 100%;
   }
 
-  .page_description__zdUcg p {
+  .page_description__bNOiT p {
     align-items: center;
     inset: 0 0 auto;
     padding: 2rem 1rem 1.4rem;
@@ -423,7 +423,7 @@ h5 {
             backdrop-filter: blur(24px);
   }
 
-  .page_description__zdUcg div {
+  .page_description__bNOiT div {
     align-items: flex-end;
     pointer-events: none;
     inset: auto 0 0;
@@ -439,17 +439,17 @@ h5 {
 }
 
 @media (prefers-color-scheme: dark) {
-  .page_vercelLogo__suzFO {
+  .page_vercelLogo__d3B1Z {
     filter: invert(1);
   }
 
-  .page_logo__Ln0xD,
-  .page_thirteen__3t8_c img {
+  .page_logo__4wOtS,
+  .page_thirteen__bBDev img {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 
-@keyframes page_rotate__nOICZ {
+@keyframes page_rotate__YkJws {
   from {
     transform: rotate(360deg);
   }

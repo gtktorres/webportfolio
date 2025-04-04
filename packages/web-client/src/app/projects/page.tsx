@@ -20,7 +20,7 @@ import styles from '../../styles/page.module.css';
         <div className="Border">
           <h3>
             Old-School DnD Interactive Story - IN PROGRESS
-            <Link href="https://github.com/gtktorres/StoneMarbel-Old-School-MERNG">
+            <Link href="https://github.com/gtktorres/StoneMarble-Old-School-MERNG">
               <Image src={github} height="25" alt="old-school DnD"/>{" "}
             </Link>
           </h3>
