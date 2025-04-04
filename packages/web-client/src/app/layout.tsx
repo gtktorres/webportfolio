@@ -6,7 +6,7 @@ const Navbar = dynamic(
   () => {
     return import('../components/Navbar');
   },
-  { ssr: false }
+  { ssr: true }
 );
 
 export const metadata = {
