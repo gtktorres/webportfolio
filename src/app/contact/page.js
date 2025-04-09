@@ -37,7 +37,7 @@ import Portrait1 from '../../components/Project-Images/portrait1.jpg'
             <h4>Email</h4>
             <p>gtktorres@gmail.com</p>
             <h4>Mobile</h4>
-            <p>7205390412</p>
+            <p>7205390819</p>
             <h4>LinkedIn</h4>
             <p>linkedin.com/in/guevara-torres</p>
             <h4>GitHub</h4>
