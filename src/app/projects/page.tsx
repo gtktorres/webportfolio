@@ -7,6 +7,7 @@ import Warhammer from "../../components/Project-Images/warhammer.png";
 import Toxic from "../../components/Project-Images/toxic.png";
 import Repaycycle from "../../components//Project-Images/repaycycle.png";
 import InteractiveStory from "../../components//Project-Images/InteractiveStory.png";
+import CommerceManagement from "../../components//Project-Images/in progress.png";
 import github from "../../components//Project-Images/github.ico";
 import Image from "next/image";
 
@@ -20,9 +21,9 @@ const Projects = () => {
         </div>
         <div className="Border">
           <h3>
-            Excel Budgeting Tool – IN PROGRESS
-            <Link href="https://github.com/gtktorres/ExcelBudgetingTool">
-              <Image src={github} height="25" alt="Excel Budgeting Tool" />{" "}
+             Commerce Management Solution – IN PROGRESS
+            <Link href="https://github.com/gtktorres/ComMan">
+              <Image src={github} height="25" alt="Commerce Management Solution" />{" "}
             </Link>
           </h3>
           <div
@@ -32,20 +33,22 @@ const Projects = () => {
             }}
           >
             <Image
-              src={InteractiveStory}
+              src={CommerceManagement}
               width="300"
               height="300"
-              alt="Excel Budgeting Tool"
+              alt="Commerce Management Solution"
             />
           </div>
           <ul>
             <li>
-              This project can automate the process of creating and managing budgets by using Excel
-              spreadsheets to track expenses and income.
+              This project involves creating a fully functional online shopping platform that allows 
+              users to browse products, manage their shopping carts, and complete purchases. It also 
+              includes an inventory management system to help store owners keep track of their products.
             </li>
             <li>
-              With C# and Excel automation, the tool can automatically calculate the budget for each
-              category and generate reports that show how the budget is being spent over time.
+              With C#, HTML and CSS for the frontend and backend and MySQL and MSSMS for the database, 
+              this application will provide a comprehensive solution for both customers and store owners 
+              by keeping track of inventory and sales.
             </li>
           </ul>
         </div>
