@@ -5,15 +5,15 @@ import '../styles/client.css'
 const Navbar = dynamic(
   () => {
     return import('../components/Navbar');
-  },
-  { ssr: false }
+  }
 );
 
 export const metadata = {
   icons: {
     icon: 'https://em-content.zobj.net/thumbs/120/twitter/348/sunrise-over-mountains_1f304.png'
   },
-  title: 'Guevara Torres',
+  title: 'Guevara Torres - Fullstack Developer',
+  keywords: ['Portfolio', 'Guevara Torres', 'Software Developer'],
   description: 'Portfolio',
 }
 

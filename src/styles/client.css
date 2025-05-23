@@ -3,7 +3,16 @@
   text-align: center;  
   margin-left: auto;
   margin-right: auto;
-  color: purple;
+  color: hsla(0,0%,0%,1);
+  top: '0';
+  position: fixed;
+  left: '0';
+  right: 'auto'; 
+  bottom: 'auto'; 
+  margin-right: '-50%';
+  z-index: 1000;
+  width: 100%;
+  transform: 'translate(-50%, -50%)';
 }
 
 .Projects {
@@ -11,7 +20,7 @@
   margin-right: auto;
   align-self: center;
   margin-top: 10px;
-  background-color: lightblue;
+  background-color: hsla(0,0%, 0%, 1);
   border-width: 5px;
   padding: 20px;  
   border-radius: 8px;  
@@ -23,7 +32,7 @@
   margin-right: auto;
   align-self: center;
   margin-top: 10px;
-  background-color: lightblue;
+  background-color: hsla(0,0%,0%,1);
   border-width: 5px;
   padding: 20px;  
   border-radius: 8px;  
@@ -34,7 +43,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  background-color: lightblue;
+  background-color: hsla(0,0%, 0%, 1);
   border-width: 5px;
   padding: 20px;
   border-radius: 8px;  
@@ -96,8 +105,7 @@
 }
 
 body {  
-  background-image: url(../components/Project-Images/background.png);
-  background-color: bisque;
+  background-color: hsla(0,0%,0%,1);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -108,11 +116,11 @@ body {
 
 p {
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 5rem;
   text-align: left;
   font-size: 2em;
-  font-style: bold;
-  color: purple;
+  font-weight: 100;
+  color: white;
   border-radius: 5em;
   border-width: 1px;
 }
@@ -123,27 +131,24 @@ li {
   text-align: left;
   font-size: 1em;
   font-style: bold;
-  color: purple;
+  color: white;
   border-radius: 5em;
   border-width: 1px;
 }
 
 h1 {
   text-align: center;
-  font-size: 5em;
-  font-style: bold;
-  color: purple;
-  border-radius: 5em;
-  border-width: 1px;
+  font-size: 2em;
+  color: white;
 }
 
 h2 {
   margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  font-size: 2em;
-  font-style: bold;
-  color: purple;
+  margin-left: 5rem;
+  text-align: left;
+  font-size: 3em;
+  font-weight: 100;
+  color: hsla(204.39,79.49%,38.24%,1);
   border-radius: 5em;
   border-width: 1px;
 }
@@ -153,8 +158,8 @@ h3 {
   margin-left: auto;
   text-align: left;
   font-size: 2em;
-  font-style: bold;
-  color: purple;
+  font-family: 'Times New Roman';
+  color: white;
   border-radius: 5em;
   border-width: 1px;
 }
@@ -164,17 +169,16 @@ h4 {
   margin-left: auto;
   text-align: left;
   font-size: 2em;
-  font-style: bold;
-  color: purple;
+  font-family: 'Times New Roman';
+  color: hsla(0,0%,100%,1);
   border-radius: 5em;
   border-width: 1px;
 }
 
 h5 {
-  text-align: center;
-  font-size: 5em;
-  font-style: bold;
-  color: purple;
+  text-align: left;
+  font-size: 2em;
+  color: hsla(0,0%,100%,1);
   border-radius: 5em;
   border-width: 1px;
 }

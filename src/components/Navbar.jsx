@@ -9,6 +9,7 @@ const MENU_LIST = [
   { text: "Projects", href: "/projects" },
   { text: "Contact", href: "/contact" },
 ];
+
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
   const [activeIdx, setActiveIdx] = useState(-1);
@@ -17,7 +18,7 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-            <h1 className="logo">Guevara Torres</h1>
+            <p className="logo" style={{marginLeft: "1rem", fontSize: "1.5rem"}}>Guevara Torres - Fullstack Developer</p>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
