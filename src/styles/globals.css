@@ -185,12 +185,13 @@ nav{
 
 .container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas: 
     "left right";
   gap: "5rem";
   width: "100%";
   margin: "0 auto";
+  padding: 2rem
 }
 @media screen and (min-width: 768px) {
   .nav__menu-bar{
