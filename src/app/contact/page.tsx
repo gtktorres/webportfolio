@@ -6,8 +6,10 @@ import Laptop from "../../components/Project-Images/laptop image contact.png";
 
   export default function Contact() {
     
+    const nodemailer = require('nodemailer');
     const [isOpen, setIsOpen] = useState(false);
 
+    const email_password = process.env.PASSWORD; // Ensure you have this environment variable set up correctly
       const customStyles = { overlay: { 
         backgroundColor: 'rgba(0, 0, 0, 0.6)' },
         content: { top: '50%', left: '50%', right: 'auto', bottom: 'auto', marginRight: '-50%', transform: 'translate(-50%, -50%)' 
@@ -34,6 +36,29 @@ import Laptop from "../../components/Project-Images/laptop image contact.png";
                 const message = target.message.value;
                 console.log(firstName, lastName, email, message);
                 // Handle form submission logic here
+                // Create a test account or replace with real credentials.
+                const transporter = nodemailer.createTransport({
+                  host: "smtp.gmail.email",
+                  port: 587,
+                  secure: false, // true for 465, false for other ports
+                  auth: {
+                    user: "gtktorres@gmail.com",
+                    pass: {email_password},
+                  },
+                });
+
+                // Wrap in an async IIFE so we can use await.
+                (async () => {
+                  const info = await transporter.sendMail({
+                    from: '"Guevara Torres" <gktorres@gmail.com>',
+                    to: "gtktorres@gmail.com",
+                    subject: "Email from Contact Form",
+                    text: {message}, // plain‑text body
+                    html: `<b>${message}</b>`, // HTML body
+                  });
+
+                  console.log("Message sent:", info.messageId);
+                })();
               }
               }
             >
