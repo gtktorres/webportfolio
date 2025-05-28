@@ -3,20 +3,19 @@ import React from 'react';
 import { useState } from 'react';
 import Image from "next/image";
 import Laptop from "../../components/Project-Images/laptop image contact.png";
+import sgMail from '@sendgrid/mail';
 
-  export default function Contact() {
-    
-    const nodemailer = require('nodemailer');
+export default function Contact() {
+
     const [isOpen, setIsOpen] = useState(false);
 
     const email_password = process.env.PASSWORD; // Ensure you have this environment variable set up correctly
-      const customStyles = { overlay: { 
-        backgroundColor: 'rgba(0, 0, 0, 0.6)' },
-        content: { top: '50%', left: '50%', right: 'auto', bottom: 'auto', marginRight: '-50%', transform: 'translate(-50%, -50%)' 
-      } };
+    const sendgrid_api_key = process.env.SENDGRID; // Ensure you have this environment variable set up correctly
+    
+    sgMail.setApiKey(sendgrid_api_key || ''); // Set your SendGrid API key
+    const [modalShow, setModalShow] = React.useState(false);
 
-      const [modalShow, setModalShow] = React.useState(false);
-      const formRef = React.useRef<HTMLFormElement>(null);
+    const formRef = React.useRef<HTMLFormElement>(null);
       return (
         <div className="ContactPage" style={{ display: "grid", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
           <div className='container'>
@@ -37,27 +36,35 @@ import Laptop from "../../components/Project-Images/laptop image contact.png";
                 console.log(firstName, lastName, email, message);
                 // Handle form submission logic here
                 // Create a test account or replace with real credentials.
-                const transporter = nodemailer.createTransport({
-                  host: "smtp.gmail.email",
-                  port: 587,
-                  secure: false, // true for 465, false for other ports
-                  auth: {
-                    user: "gtktorres@gmail.com",
-                    pass: {email_password},
-                  },
-                });
+                const msg = {
+                  to: 'test@example.com',
+                  from: 'test@example.com', // Use the email address or domain you verified above
+                  subject: 'Sending with Twilio SendGrid is Fun',
+                  text: 'and easy to do anywhere, even with Node.js',
+                  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+                };
+                //ES6
 
-                // Wrap in an async IIFE so we can use await.
-                (async () => {
-                  const info = await transporter.sendMail({
-                    from: '"Guevara Torres" <gktorres@gmail.com>',
-                    to: "gtktorres@gmail.com",
-                    subject: "Email from Contact Form",
-                    text: {message}, // plain‑text body
-                    html: `<b>${message}</b>`, // HTML body
+                sgMail
+                  .send(msg)
+                  .then(() => {}, error => {
+                    console.error(error);
+
+                    if (error.response) {
+                      console.error(error.response.body)
+                    }
                   });
+                //ES8
+                (async () => {
+                  try {
+                    await sgMail.send(msg);
+                  } catch (error) {
+                      console.error(error);
 
-                  console.log("Message sent:", info.messageId);
+                      if (typeof error === 'object' && error !== null && 'response' in error && (error as any).response != null) {
+                        console.error((error as any).response.body)
+                      }
+                  }
                 })();
               }
               }
@@ -105,7 +112,7 @@ import Laptop from "../../components/Project-Images/laptop image contact.png";
                       <input
                         type="firstName"
                         name="firstName"
-                        style={{ marginLeft: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "4rem",  marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)", paddingRight: ".25rem" }}
+                        style={{ color: "black", marginLeft: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "4rem",  marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)", paddingRight: ".25rem" }}
                       />
                       </label>
                   </div>
@@ -123,7 +130,7 @@ import Laptop from "../../components/Project-Images/laptop image contact.png";
                       <input
                         type="lastName"
                         name="lastName"
-                        style={{  marginRight: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "4rem", marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)" }}
+                        style={{  color: "black", marginRight: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "4rem", marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)" }}
                       />
                       </label>
                   </div>
@@ -144,7 +151,7 @@ import Laptop from "../../components/Project-Images/laptop image contact.png";
                       type="email"
                       name="email"
                       border-radius="25px"
-                      style={{ marginLeft: "5rem",  fontSize: "2rem", borderRadius: "25px", display: "block", width: "50%", height: "4rem", background: "hsla(240, 11%, 93%, 0.902)"  }}
+                      style={{ color: "black", marginLeft: "5rem",  fontSize: "2rem", borderRadius: "25px", display: "block", width: "50%", height: "4rem", background: "hsla(240, 11%, 93%, 0.902)"  }}
                     />
                     </label>
                 </div>
@@ -163,7 +170,7 @@ import Laptop from "../../components/Project-Images/laptop image contact.png";
                     <input
                       type="message"
                       name="message"
-                      style={{    marginRight: "5rem", marginLeft: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "10rem", marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)" }}
+                      style={{    color: "black", marginRight: "5rem", marginLeft: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "10rem", marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)" }}
                     />
                     </label>
                 </div>

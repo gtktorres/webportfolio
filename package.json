@@ -12,12 +12,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sendgrid/mail": "^8.1.5",
     "@types/node": "18.15.5",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "dgram": "^1.0.1",
+    "dns": "^0.1.2",
     "dotenv": "^16.5.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "net": "^1.0.2",
     "next": "^15.4.0-canary.51",
     "nodemailer": "^7.0.3",
     "react": "18.2.0",
@@ -26,5 +30,8 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.9.0",
     "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17"
   }
 }
