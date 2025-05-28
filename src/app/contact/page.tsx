@@ -9,7 +9,6 @@ export default function Contact() {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const email_password = process.env.PASSWORD; // Ensure you have this environment variable set up correctly
     const sendgrid_api_key = process.env.SENDGRID; // Ensure you have this environment variable set up correctly
     
     sgMail.setApiKey(sendgrid_api_key || ''); // Set your SendGrid API key
