@@ -17,7 +17,7 @@ export default function Contact() {
     const formRef = React.useRef<HTMLFormElement>(null);
       return (
         <div className="ContactPage" style={{ display: "grid", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-          <div className='container'>
+          <div className='container-contact'>
             <form
               ref={formRef}
               onSubmit={(e: React.SyntheticEvent) => {
@@ -71,12 +71,7 @@ export default function Contact() {
 
               <div className="Contact">
                 <div>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <h2>Contact Us</h2>
+                  <h2 style={{fontSize: "4em"}}>Contact Us</h2>
                   <br />
                   <p>If you’re interested in collaborating, please provide your information, and we will contact you soon. We look forward to connecting with you.</p>
                   <br />
@@ -87,9 +82,6 @@ export default function Contact() {
                     gtktorres@gmail.com
                   </p>
                   <p>7205390819</p>
-                  <br />
-                  <br />
-                  <br />
                   <br />
                   <br />
                   <p>Name (required)</p>

@@ -1,32 +1,69 @@
 "use client"; // this is a client component 👈🏽
 import React from "react";
-import Portrait0 from '../../components/Project-Images/portrait0.jpg'
+import Keyboard from '../../components/Project-Images/soft corner keyboard.png';
+import Deskspace from '../../components/Project-Images/deskspace.png';
 import Image from "next/image";
 
 const About = () => {
     return (
-      <main>
-        <div>
-          <Image
-            height={500}
-            width={370}
-            src={Portrait0}
-            className="App-port"
-            alt="Portrait"
-          />
-        </div>
-
-        <div className="About">
-          <h2>About Me</h2>
-        </div>
-
-        <div className="Border">
-          <p>
-            I&#39;m a Software Developer with a Bachelor of Science in Computer
-            Science degree. Interested in Fullstack applications and based in Denver, Colorado.
-          </p>
-        </div>
-      </main>
+      <div>
+        <main>
+          <div className='container-about'>
+            <div>
+              <div>
+                <h2>
+                  Let’s get in touch
+                </h2>
+              </div>
+              <br />
+              <br />
+              <div>
+                <p style={{fontWeight:"bold"}}>
+                  Fullstack Developer, Consultant, and Broncos fan in Colorado
+                </p>
+              </div>
+              <br />
+              <div>
+                <p>
+                  A native New Yorker turned Coloradan, I am a highly motivated programmer who enjoys data-driven work and getting hands-on with code. During my undergrad, I learned a variety of coding languages including Python, Java, and JavaScript. Learning C# during my time at FIS Global. Followed by frameworks such as ASP.NET, Winforms, and WPF. In my free time, I tell everyone I know the Broncos will make it to the playoffs. Check out my work at https://github.com/gtktorres. You can also follow me on Instagram @gtkt.dev.
+                </p>
+              </div>
+            </div>
+            <div>
+              <Image
+                src={Keyboard}
+                alt="Soft Corner Keyboard"
+                width={500}
+                height={500}
+                style={{ position: "sticky", width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </div>
+          </div>         
+          </main>
+          <footer style={{ backgroundImage: `url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
+              <div><h2 style={{ color: "white", textAlign: "center"}}>Get Started</h2></div>
+              <div style={{ color: "white", fontSize: "1.5em", fontWeight: "100"}}>
+                <button
+                style={{
+                  fontSize: "1.5em",
+                  textAlign: "center",
+                  borderRadius: "5em",
+                  marginBottom: "1rem",
+                  borderWidth: "1px",
+                  backgroundColor: "#0a4e9c",
+                  padding: "1rem 2rem",
+                  display: "block",
+                  width: "25%",
+                  height: "5rem",
+                  cursor: "pointer"
+                }}
+                //onClick={() => }
+              >
+                View Services
+              </button>
+            </div>                   
+          </footer>
+      </div>
     );
 }
 
