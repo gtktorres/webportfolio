@@ -5,7 +5,7 @@ import NavItem from "./NavItem";
 
 const MENU_LIST = [
   { text: "", href: "/" },
-  { text: "Projects", href: "/projects" },
+  { text: "Services", href: "/services" },
   { text: "About", href: "/about" },
   { text: "Contact", href: "/contact" },
 ];

@@ -40,9 +40,9 @@ const About = () => {
             </div>
           </div>         
           </main>
-          <footer style={{ position: "relative", backgroundImage: `url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
+          <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
             <div className="center" >
-              <div><h2 style={{ color: "black", textAlign: "center"}}>Get Started</h2></div>
+              <div><h2 style={{ color: "white", textAlign: "center"}}>Get Started</h2></div>
               <div style={{ fontSize: "1.5em", fontWeight: "100"}}>
                 <button
                   style={{
