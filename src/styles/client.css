@@ -48,18 +48,6 @@
   max-width: 700px;
 }
 
-.Button1 {
-  background-color: #0a4e9c; 
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  align-items: center;
-  text-align: center;
-  display: inline-block;
-  font-size: 32px;
-  border-radius: 8px;
-  content: 'About';
-}
 .Button2 {
   background-color: #0a4e9c;
   border: none;

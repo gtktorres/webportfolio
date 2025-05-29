@@ -40,28 +40,30 @@ const About = () => {
             </div>
           </div>         
           </main>
-          <footer style={{ backgroundImage: `url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
-              <div><h2 style={{ color: "white", textAlign: "center"}}>Get Started</h2></div>
-              <div style={{ color: "white", fontSize: "1.5em", fontWeight: "100"}}>
+          <footer style={{ position: "relative", backgroundImage: `url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
+            <div className="center" >
+              <div><h2 style={{ color: "black", textAlign: "center"}}>Get Started</h2></div>
+              <div style={{ fontSize: "1.5em", fontWeight: "100"}}>
                 <button
-                style={{
-                  fontSize: "1.5em",
-                  textAlign: "center",
-                  borderRadius: "5em",
-                  marginBottom: "1rem",
-                  borderWidth: "1px",
-                  backgroundColor: "#0a4e9c",
-                  padding: "1rem 2rem",
-                  display: "block",
-                  width: "25%",
-                  height: "5rem",
-                  cursor: "pointer"
-                }}
-                //onClick={() => }
-              >
-                View Services
-              </button>
-            </div>                   
+                  style={{
+                    color: "black", 
+                    marginRight: "5rem",
+                    marginLeft: "5rem",
+                    fontSize: "1.5em",
+                    borderRadius: "5em",
+                    borderWidth: "1px",
+                    backgroundColor: "#0a4e9c",
+                    padding: "1rem 2rem",
+                    display: "block",
+                    height: "5rem",
+                    cursor: "pointer",
+                  }}
+                  onClick={() =>  window.location.href="/projects" }
+                >
+                  View Services
+                </button>
+              </div>  
+            </div>                 
           </footer>
       </div>
     );
