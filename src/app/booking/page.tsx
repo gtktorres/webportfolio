@@ -4,7 +4,7 @@ import Keyboard from '../../components/Project-Images/soft corner keyboard.png';
 import Deskspace from '../../components/Project-Images/deskspace.png';
 import Image from "next/image";
 
-const About = () => {
+const Booking = () => {
     return (
       <div>
         <main>
@@ -70,4 +70,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default Booking;

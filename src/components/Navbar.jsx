@@ -8,6 +8,7 @@ const MENU_LIST = [
   { text: "Services", href: "/services" },
   { text: "About", href: "/about" },
   { text: "Contact", href: "/contact" },
+  { text: "Book Now", href: "/booking" }
 ];
 
 const Navbar = () => {

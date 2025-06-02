@@ -204,7 +204,7 @@ nav{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-areas: 
-    "left . right"
+    "a b c"
     "a b c"
     "footer";
   gap: 5rem;
