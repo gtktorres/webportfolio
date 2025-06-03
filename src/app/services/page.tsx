@@ -2,68 +2,67 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Deskspace from '../../components/Project-Images/deskspace.png';
+import Deskspace from '../../components/Project-Images/deskspace.png'
+import Keyboard from '../../components/Project-Images/keyboard-black.png';
+import Laptop from '../../components/Project-Images/macbook.png';
+import Laptops from '../../components/Project-Images/macbooks.png';
 
 const Services = () => {
     return(
         <div>
-            <main>  
-                <div className='container-services'>
-                        
-                            <div>
-                                <div>
-                                    <h2>Services Offered</h2>
-                                </div>
-                                <div>
-                                    <p>
-                                        Schedule your consultation with us today and experience personalized service tailored to your business software needs. Let our experts guide you in finding the optimal solutions to enhance your company&apos;s efficiency.
-                                    </p>
-                                <div>
-                            </div>
-                            <div>
-                                <div>
-                                    <Image 
-                                        src={Deskspace}
-                                        alt=''
-                                    ></Image>
-                                    <h2></h2>
-                                    <p></p>
-                                    <p></p>
-                                    <button></button>
-                                </div>
-                                <div>
-                                    <Image 
-                                        src={Deskspace}
-                                        alt=''
-                                        ></Image>
-                                    <h2></h2>
-                                    <p></p>
-                                    <p></p>
-                                    <button></button>
-                                </div>
-                                <div>
-                                    <Image 
-                                        src={Deskspace}
-                                        alt=''
-                                    ></Image>
-                                    <h2></h2>
-                                    <p></p>
-                                    <p></p>
-                                    <button></button>
-                                </div>
-                            </div>
-                            <div className='footer'>
-                                <Image
-                                    src={Deskspace}
-                                    alt="Deskspace"
-                                    width={500}
-                                    height={500}
-                                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                                />
-                            </div>
-                        </div>
+            <header>
+                   <div className='container-services'>
+                    <div className='left'>
+                        <h2 style={{whiteSpace: "nowrap"}}>Services Provided</h2>
                     </div>
-                </div>
+                
+                    <div className='right' style={{position: "relative"}}>
+                        <p>
+                           Schedule your consultation with us today and experience personalized service tailored to your business software needs. Let our experts guide you in finding the optimal solutions to enhance your company&apos;s efficiency.
+                        </p>
+                    </div>
+                    </div>
+            </header>
+
+            <main>   
+
+                    <div className='container-service' >    
+                        <div className='main'>
+                        <Image 
+                            src={Keyboard}
+                            alt=''
+                            style={{width:"33%", height:"100%"}}
+                        ></Image>
+                            <h2></h2>
+                            <p></p>
+                            <p></p>
+                            <button></button>
+                        </div>
+                        <div className='main'>
+                        <Image 
+                            src={Laptop}
+                            alt=''
+                            style={{width:"33%", height:"100%"}}
+                        ></Image>
+                            <h2></h2>
+                            <p></p>
+                            <p></p>
+                            <button></button>
+                        </div>
+
+                        <div className='main'>
+                        <Image 
+                            src={Laptops}
+                            alt=''
+                            style={{width:"33%", height:"100%"}}
+                        ></Image>
+                            <h2></h2>
+                            <p></p>
+                            <p></p>
+                            <button></button>
+                        </div>
+                    
+                </div>                                                                
             </main>
             <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
                 <div className="center" >
