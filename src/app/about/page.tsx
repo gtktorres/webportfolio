@@ -9,7 +9,7 @@ const About = () => {
       <div>
         <main>
           <div className='container-about'>
-            <div>
+            <div style={{ marginLeft: "5rem"}}>
               <div>
                 <h2>
                   Let’s get in touch
@@ -52,7 +52,7 @@ const About = () => {
                     marginLeft: "5rem",
                     fontSize: "1.5em",
                     borderRadius: "5em",
-                    borderWidth: "1px",
+                    borderWidth: "0",
                     backgroundColor: "#0a4e9c",
                     padding: "1rem 2rem",
                     display: "block",

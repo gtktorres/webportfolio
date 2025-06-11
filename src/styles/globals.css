@@ -81,14 +81,13 @@
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
   background-color: hsla(240, 11%, 93%, 0.902);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  overflow: auto;
-  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* body {
@@ -190,6 +189,7 @@ nav{
     "left right"
     "footer footer";
   column-gap: 5rem;
+  
 }
 
 .center{
@@ -198,6 +198,8 @@ nav{
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .horizontal-center{
@@ -207,16 +209,35 @@ nav{
   transform: translateX(-50%);
 }
 
-.container-services{
+.container-services-header{
+  margin-right: 5rem;
+  margin-left: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-areas: 
-    "left right"
-    "main main main"
-    "footer";
   column-gap: 1rem;
   object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 100%; /* Full width of the container */
+    max-height: 100%;
+    justify-items: stretch;
+    margin-top: 1rem; /* Optional: adds some space above the grid */
+}
+
+.grid-item {
+    border: 1px; /* Optional: adds a border for visibility */
+    padding: 10px; /* Optional: adds padding inside each item */
+    text-align: center; /* Centers text and button */
+    min-width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 @media screen and (min-width: 768px) {
   .nav__menu-bar{

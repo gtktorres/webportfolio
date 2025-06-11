@@ -50,7 +50,6 @@
 
 .Button2 {
   background-color: #0a4e9c;
-  border: none;
   color: hsla(240, 11%, 93%, 0.902);
   padding: 15px 32px;
   text-align: center;
@@ -61,7 +60,6 @@
 }
 .Button3 {
   background-color: #0a4e9c;
-  border: none;
   color: hsla(240, 11%, 93%, 0.902);
   padding: 15px 32px;
   text-align: center;
@@ -72,7 +70,6 @@
 }
 .Button4 {
   background-color: #0a4e9c;
-  border: none;
   color: hsla(240, 11%, 93%, 0.902);
   padding: 15px 32px;
   text-align: center;
@@ -80,6 +77,30 @@
   font-size: 32px;
   border-radius: 8px;
   content: 'Home';
+}
+
+.my-button {
+    background-color: hsla(240, 11%, 93%, 0.902); /* Default background color */
+    color: #0a4e9c; /* Default text color */
+    padding: 1rem 2rem; /* Padding around the text */
+    border-color: #0a4e9c;
+    border: 1px solid #0a4e9c; /* Border color */
+    border-radius: 5em; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 1.5rem; /* Font size */
+    display: block;
+    height: 5rem;
+    cursor: pointer;
+    max-width: 60%;
+    min-width: min-content;
+    align-content: center;
+}
+
+.my-button:hover {
+    background-color: #0a4e9c; /* Background color on hover */
+    color: hsla(240, 11%, 93%, 0.902); /* Text color on hover */
 }
 
 .App-port {
@@ -101,8 +122,6 @@
 } */
 
 p {
-  margin-right: 5rem;
-  margin-left: 5rem;
   text-align: left;
   font-size: 2em;
   font-weight: 100;
@@ -129,9 +148,7 @@ h1 {
 }
 
 h2 {
-  margin-right: 5rem;
-  margin-left: 5rem;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 100;
   color: hsla(204.39,79.49%,38.24%,1);
   border-radius: 5em;
