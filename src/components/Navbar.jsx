@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className={`nav`}>
+      <nav className={`nav`} style={{ background: 'hsla(240, 11%, 93%, 1)' }}>
         <Link href={"/"}>
             <p className="logo" style={{marginLeft: "1rem", fontSize: "1.5rem"}}>Guevara Torres - Fullstack Developer</p>
         </Link>

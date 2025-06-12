@@ -1,71 +1,140 @@
 "use client"; // this is a client component 👈🏽
 import React from "react";
-import Keyboard from '../../components/Project-Images/soft corner keyboard.png';
-import Deskspace from '../../components/Project-Images/deskspace.png';
-import Image from "next/image";
+import { POST } from "../api/ReserveKit/route";
 
 const Booking = () => {
+  const formRef = React.useRef<HTMLFormElement>(null);
     return (
-      <div>
+      <div style={{ background: 'hsla(240, 11%, 93%, 1)' }}>
         <main>
-          <div className='container-about'>
-            <div>
-              <div>
-                <h2>
-                  Let’s get in touch
+          <div className='container-booking'>
+            
+              <div className='left'>
+                <h2 style={{fontSize: "5em", fontKerning: "normal"}}>
+                  Schedule your appointment
                 </h2>
-              </div>
-              <br />
-              <br />
-              <div>
-                <p style={{fontWeight:"bold"}}>
-                  Fullstack Developer, Consultant, and Broncos fan in Colorado
+                <br />
+                <p style={{marginTop: "2rem", marginBottom: "5rem"}}>
+                Schedule a consultation with our expert team to explore tailor-made software solutions that best fit your needs. Benefit from our in-depth industry knowledge and cutting-edge technology to drive your business forward.  
                 </p>
               </div>
-              <br />
-              <div>
-                <p>
-                  A native New Yorker turned Coloradan, I am a highly motivated programmer who enjoys data-driven work and getting hands-on with code. During my undergrad, I learned a variety of coding languages including Python, Java, and JavaScript. Learning C# during my time at FIS Global. Followed by frameworks such as ASP.NET, Winforms, and WPF. In my free time, I tell everyone I know the Broncos will make it to the playoffs. Check out my work at https://github.com/gtktorres. You can also follow me on Instagram @gtkt.dev.
-                </p>
-              </div>
-            </div>
-            <div>
-              <Image
-                src={Keyboard}
-                alt="Soft Corner Keyboard"
-                width={500}
-                height={500}
-                style={{ position: "sticky", width: "100%", height: "100%", objectFit: "cover" }}
-              />
+            <div className='right' style={{position: "relative", border: "1px dashed black", borderRadius: "25px", padding: 0, marginBottom: "4rem", boxSizing: "border-box"}}>
+              <form
+              ref={formRef}
+              onSubmit={(e: React.SyntheticEvent) => {
+                e.preventDefault();
+                const target = e.target as typeof e.target & {
+                  name: { value: string };
+                  email: { value: string };
+                };
+                const name = target.name.value;
+                const email = target.email.value;
+                console.log(name, email);
+                // Handle form submission logic here
+                POST(new Request('/api/ReserveKit', {
+                  method: 'POST',
+                  body: JSON.stringify({ name, email }),
+                  headers: {
+                    'Content-Type': 'application/json'
+                  }
+                }))
+                alert(`Thank you ${name}! We will contact you at ${email}.`);
+                if (formRef.current) {
+                  formRef.current.reset(); // Reset the form after submission
+                }               
+              }}
+            >
+
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr', marginTop: '3rem' }}>
+                  <div>
+                      <label
+                        style={{ 
+                          textAlign: "left",
+                          fontSize: "2em",
+                          color: "black",
+                          borderRadius: "5em",
+                          marginLeft: "3.5rem",
+                          borderWidth: "1px"
+                        }}
+                      >
+                        Name
+                      <input
+                        type="name"
+                        name="Enter your name"
+                        required
+                        style={{ padding: "1rem", alignContent: "center", color: "black", marginLeft: "3.5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "80%", height: "4rem",  marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)"}}
+                      />
+                      </label>
+                  </div>
+                <div>
+                    <label 
+                      style={{ 
+                        textAlign: "left",
+                        fontSize: "2em",
+                        color: "black",
+                        borderRadius: "5em",
+                        marginLeft: "3.5rem",
+                        borderWidth: "1px" 
+                      }}
+                    >
+                      Email
+                    <input
+                      type="email"
+                      name="Enter your email"
+                      required
+                      border-radius="25px"
+                      style={{ padding: "1rem", alignContent: "center", color: "black", marginLeft: "3.5rem",  fontSize: "2rem", borderRadius: "25px", display: "block", width: "80%", height: "4rem", background: "hsla(240, 11%, 93%, 0.902)"  }}
+                    />
+                    </label>
+                </div>
+                <div>
+                  <label
+                    style={{ 
+                        textAlign: "left",
+                        borderRadius: "5em",
+                        marginLeft: "5rem",
+                        borderWidth: "1px" 
+                    }}
+                  >
+                  <hr style={{margin:"1rem"}}></hr>
+                  <button
+                    type="submit"
+                    style={{ 
+                      fontSize: "1.5em",
+                      fontWeight: "100",
+                      textAlign: "center",
+                      color: "hsla(0,0%,100%,1)",
+                      borderRadius: "5em",
+                      marginLeft: "3.5rem",
+                      marginTop: "2rem",
+                      marginBottom: "1rem",
+                      borderWidth: "1px",
+                      backgroundColor: "#0a4e9c",
+                      padding: "1rem 2rem",
+                      display: "block",
+                      width: "35%",
+                      height: "5rem",
+                      cursor: "pointer"
+                    }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (formRef.current) {
+                        formRef.current.requestSubmit(); // Trigger form submission
+                      }
+                    }}
+                  >
+                    Book Now
+                  </button>
+                  </label>
+                </div>
+                
+                </div>
+            </form>
+            
             </div>
           </div>         
         </main>
-      
-      <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
-            <div className="center" >
-              <div><h2 style={{ color: "white", textAlign: "center"}}>Get Started</h2></div>
-              <div style={{ fontSize: "1.5em", fontWeight: "100"}}>
-                <button
-                  style={{
-                    color: "hsla(240, 11%, 93%, 0.902)", 
-                    marginRight: "5rem",
-                    marginLeft: "5rem",
-                    fontSize: "1.5em",
-                    borderRadius: "5em",
-                    borderWidth: "1px",
-                    backgroundColor: "#0a4e9c",
-                    padding: "1rem 2rem",
-                    display: "block",
-                    height: "5rem",
-                    cursor: "pointer",
-                  }}
-                  onClick={() =>  window.location.href="/services" }
-                >
-                  View Services
-                </button>
-              </div>  
-            </div>                 
-        </footer>
+        <footer></footer>
       </div>
     );
 }
