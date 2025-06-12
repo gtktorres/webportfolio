@@ -103,6 +103,25 @@
     color: hsla(240, 11%, 93%, 0.902); /* Text color on hover */
 }
 
+.my-button-home {
+    background-color: hsla(240, 11%, 93%, 0); /* Default background color */
+    color: hsla(240, 11%, 93%, 0.902); /* Default text color */
+    padding: 1rem 2rem; /* Padding around the text */
+    border-color: #0b81bc;
+    border: 1px solid #0b81bc; /* Border color */
+    border-radius: 5em; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 1.5rem; /* Font size */
+    display: block;
+    height: 5rem;
+    cursor: pointer;
+    max-width: 60%;
+    min-width: min-content;
+    align-content: center;
+}
+
 .App-port {
   border: 4px solid black;
   display: block;
@@ -110,16 +129,6 @@
   margin-right: auto;
   border-radius: 10em;
 }
-
-/* body {  
-  background-color: #ffffff40;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: auto;
-  height: 100vh;
-
-} */
 
 p {
   text-align: left;

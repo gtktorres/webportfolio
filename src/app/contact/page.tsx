@@ -1,22 +1,18 @@
 "use client"; // this is a client component 👈🏽
 import React from 'react';
-import { useState } from 'react';
 import Image from "next/image";
 import Laptop from "../../components/Project-Images/laptop image contact.png";
 import sgMail from '@sendgrid/mail';
 
 export default function Contact() {
 
-    const [isOpen, setIsOpen] = useState(false);
-
     const sendgrid_api_key = process.env.SENDGRID; // Ensure you have this environment variable set up correctly
     
     sgMail.setApiKey(sendgrid_api_key || ''); // Set your SendGrid API key
-    const [modalShow, setModalShow] = React.useState(false);
 
     const formRef = React.useRef<HTMLFormElement>(null);
       return (
-        <div className="ContactPage" style={{ display: "grid", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+        <div className="ContactPage" style={{ display: "grid", flexDirection: "column", alignItems: "center", justifyContent: "center", background: 'hsla(240, 11%, 93%, 1)' }}>
           <div className='container-contact'>
             <form
               ref={formRef}
@@ -198,24 +194,6 @@ export default function Contact() {
                   </label>
                 </div>
               </div>
-
-              {/* <div className="Border ">
-                <h4>Email</h4>
-                <p>gtktorres@gmail.com</p>
-                <h4>Mobile</h4>
-                <p>7205390819</p>
-                <h4>LinkedIn</h4>
-                <p>linkedin.com/in/guevara-torres</p>
-                <h4>GitHub</h4>
-                <p>https://github.com/gtktorres</p>
-              </div> */}
-
-              {/* <Button className="Button3"
-                  variant="primary" 
-                  onClick={() => setIsOpen(false)}>
-                  Close
-                </Button>
-              </Modal> */}
             </form>
             <Image
               src={Laptop}

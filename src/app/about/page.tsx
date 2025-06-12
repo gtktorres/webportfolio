@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const About = () => {
     return (
-      <div>
+      <div style={{ background: 'hsla(240, 11%, 93%, 1)' }}>
         <main>
           <div className='container-about'>
             <div style={{ marginLeft: "5rem"}}>

@@ -9,11 +9,11 @@ import Laptops from '../../components/Project-Images/macbooks.png';
 
 const Services = () => {
     return(
-        <div>
+        <div style={{ background: 'hsla(240, 11%, 93%, 1)' }}>
             <header>
                    <div className='container-services-header'>
                     <div className='left'>
-                        <h2 style={{whiteSpace: "nowrap"}}>Services Provided</h2>
+                        <h2 style={{whiteSpace: "nowrap", fontSize: "3rem"}}>Services Provided</h2>
                     </div>
                 
                     <div className='right' style={{position: "relative"}}>
