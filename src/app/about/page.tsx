@@ -3,6 +3,7 @@ import React from "react";
 import Keyboard from '../../components/Project-Images/soft corner keyboard.png';
 import Deskspace from '../../components/Project-Images/deskspace.png';
 import Image from "next/image";
+import ViewServices from "@/components/ViewServices";
 
 const About = () => {
     return (
@@ -45,24 +46,7 @@ const About = () => {
             <div className="center" >
               <div><h2 style={{ color: "white", textAlign: "center"}}>Get Started</h2></div>
               <div style={{ fontSize: "1.5em", fontWeight: "100"}}>
-                <button
-                  style={{
-                    color: "hsla(240, 11%, 93%, 0.902)", 
-                    marginRight: "5rem",
-                    marginLeft: "5rem",
-                    fontSize: "1.5em",
-                    borderRadius: "5em",
-                    borderWidth: "0",
-                    backgroundColor: "#0a4e9c",
-                    padding: "1rem 2rem",
-                    display: "block",
-                    height: "5rem",
-                    cursor: "pointer",
-                  }}
-                  onClick={() =>  window.location.href="/services" }
-                >
-                  View Services
-                </button>
+                <ViewServices />
               </div>  
             </div>                 
         </footer>

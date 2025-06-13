@@ -1,6 +1,5 @@
 'use client'
 import '../styles/globals.css'
-import React from 'react';
 
 const LearnMore = () => {
   return (
