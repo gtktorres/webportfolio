@@ -12,7 +12,7 @@ export default function Contact() {
 
     const formRef = React.useRef<HTMLFormElement>(null);
       return (
-        <div className="ContactPage" style={{ display: "grid", flexDirection: "column", alignItems: "center", justifyContent: "center", background: 'hsla(240, 11%, 93%, 1)' }}>
+        <div className="ContactPage" style={{ display: "grid", flexDirection: "column", alignItems: "left", justifyContent: "center", background: 'hsla(240, 11%, 93%, 1)' }}>
           <div className='container-contact'>
             <form
               ref={formRef}
@@ -65,7 +65,7 @@ export default function Contact() {
               }
             >
 
-              <div className="Contact">
+              <div className="Contact" style={{ marginLeft: "3rem"}}>
                 <div>
                   <h2 style={{fontSize: "4em"}}>Contact Us</h2>
                   <br />
@@ -82,7 +82,6 @@ export default function Contact() {
                   <br />
                   <p>Name (required)</p>
                   <br />
-                </div>
                 <div style={{ display: 'grid', maxWidth: "100%", gridTemplateColumns: '1fr 1fr', gridGap: '5rem'}}>
                   <div>
                       <label
@@ -91,7 +90,6 @@ export default function Contact() {
                           fontSize: "2em",
                           color: "black",
                           borderRadius: "5em",
-                          marginLeft: "5rem",
                           borderWidth: "1px",
                         }}
                       >
@@ -99,7 +97,7 @@ export default function Contact() {
                       <input
                         type="firstName"
                         name="firstName"
-                        style={{ color: "black", marginLeft: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "4rem",  marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)", paddingRight: ".25rem" }}
+                        style={{ color: "black", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "4rem",  marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)", paddingRight: ".25rem" }}
                       />
                       </label>
                   </div>
@@ -129,7 +127,6 @@ export default function Contact() {
                         fontSize: "2em",
                         color: "black",
                         borderRadius: "5em",
-                        marginLeft: "5rem",
                         borderWidth: "1px" 
                       }}
                     >
@@ -138,7 +135,7 @@ export default function Contact() {
                       type="email"
                       name="email"
                       border-radius="25px"
-                      style={{ color: "black", marginLeft: "5rem",  fontSize: "2rem", borderRadius: "25px", display: "block", width: "50%", height: "4rem", background: "hsla(240, 11%, 93%, 0.902)"  }}
+                      style={{ color: "black", fontSize: "2rem", borderRadius: "25px", display: "block", width: "50%", height: "4rem", background: "hsla(240, 11%, 93%, 0.902)"  }}
                     />
                     </label>
                 </div>
@@ -149,7 +146,6 @@ export default function Contact() {
                         fontSize: "2em",
                         color: "black",
                         borderRadius: "5em",
-                        marginLeft: "5rem",
                         borderWidth: "1px" 
                       }}
                     >
@@ -157,7 +153,7 @@ export default function Contact() {
                     <input
                       type="message"
                       name="message"
-                      style={{    color: "black", marginRight: "5rem", marginLeft: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "10rem", marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)" }}
+                      style={{ color: "black", marginRight: "5rem", fontSize: "2rem", borderRadius: "25px", display: "block", width: "85%", height: "10rem", marginBottom: "1rem", background: "hsla(240, 11%, 93%, 0.902)" }}
                     />
                     </label>
                 </div>
@@ -192,6 +188,7 @@ export default function Contact() {
                     SEND
                   </button>
                   </label>
+                </div>
                 </div>
               </div>
             </form>
