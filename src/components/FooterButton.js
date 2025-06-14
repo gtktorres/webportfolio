@@ -1,7 +1,7 @@
 'use client'
 import '../styles/globals.css'
 
-const Viewservices = () => {
+const FooterButton = () => {
     return(
         <button
                   style={{
@@ -17,11 +17,11 @@ const Viewservices = () => {
                     height: "5rem",
                     cursor: "pointer",
                   }}
-                  onClick={() =>  window.location.href="/services" }
+                  onClick={() =>  window.location.href="/booking" }
                 >
-                  View Services
+                  Book Now
         </button>
     )
 }
 
-export default Viewservices;
+export default FooterButton;

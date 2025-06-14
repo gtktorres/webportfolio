@@ -1,4 +1,3 @@
-"use client"; // this is a client component 👈🏽
 import React from "react";
 import Keyboard from '../../components/Project-Images/soft corner keyboard.png';
 import Deskspace from '../../components/Project-Images/deskspace.png';
