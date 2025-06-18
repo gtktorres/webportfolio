@@ -126,8 +126,8 @@
     background-color: hsla(240, 11%, 93%, 0); /* Default background color */
     color: hsla(240, 11%, 93%, 0.902); /* Default text color */
     padding: 1rem 2rem; /* Padding around the text */
-    border-color: #0b81bc;
-    border: 1px solid #0b81bc; /* Border color */
+    border-color: #066594;
+    border: 1px solid #066594; /* Border color */
     border-radius: 5em; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition */
     margin-right: 1rem;
@@ -138,7 +138,7 @@
     display: block;
     height: 5rem;
     cursor: pointer;
-    max-width: 60%;
+    max-width: 25%;
     min-width: min-content;
     align-content: center;
 }
