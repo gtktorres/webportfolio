@@ -4,7 +4,7 @@ import sendgrid from '@sendgrid/mail';
 const sendgrid_api_key = process.env.SENDGRID;
 sendgrid.setApiKey(sendgrid_api_key || ''); // Set your SendGrid API key
 
-export default async function handler(req: { method: string; body: { name: any; email: any; message: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; end: { (): any; new(): any; }; send: { (arg0: string): void; new(): any; }; }; }) {
+export default async function POST(req: { method: string; body: { name: any; email: any; message: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; end: { (): any; new(): any; }; send: { (arg0: string): void; new(): any; }; }; }) {
   if (req.method !== 'POST') {
     return res.status(405).end(); // Method Not Allowed
   }

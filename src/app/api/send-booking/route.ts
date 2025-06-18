@@ -2,7 +2,7 @@ import { ReserveKit } from 'reservekitjs';
 
 const reservekit_api_key = process.env.RESERVE_KIT_API_KEY;
 
-export default async function handler(req: { method: string; body: { name: any; email: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; end: { (): any; new(): any; }; send: { (arg0: string): void; new(): any; }; }; }) {
+export default async function POST(req: { method: string; body: { name: any; email: any; }; }, res: { status: (arg0: number) => { (): any; new(): any; end: { (): any; new(): any; }; send: { (arg0: string): void; new(): any; }; }; }) {
   if (req.method !== 'POST') {
     return res.status(405).end(); // Method Not Allowed
   }
