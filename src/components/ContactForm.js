@@ -7,7 +7,7 @@ const formRef = React.createRef();
 const ContactForm = () => {
 
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-        const [status, setStatus] = useState('');
+    const [status, setStatus] = useState('');
 
         const handleChange = (e) => {
         setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -152,7 +152,7 @@ const ContactForm = () => {
                       height: "5rem",
                       cursor: "pointer"
                     }}
-                    onClick={handleSubmit}
+                    onClick={() => handleSubmit}
                     >
                     SEND
                     </button>
