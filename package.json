@@ -30,6 +30,7 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.9.0",
     "reservekitjs": "^1.1.0",
+    "sendgrid": "^5.2.3",
     "sharp": "^0.34.2",
     "typescript": "5.0.2"
   },
