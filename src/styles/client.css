@@ -125,7 +125,7 @@
 .my-button-home {
     background-color: hsla(240, 11%, 93%, 0); /* Default background color */
     color: hsla(240, 11%, 93%, 0.902); /* Default text color */
-    padding: 1rem 2rem; /* Padding around the text */
+    padding: 0rem 2rem; /* Padding around the text */
     border-color: #066594;
     border: 1px solid #066594; /* Border color */
     border-radius: 5em; /* Rounded corners */
@@ -139,7 +139,6 @@
     height: 5rem;
     cursor: pointer;
     max-width: 25%;
-    min-width: min-content;
     align-content: center;
 }
 

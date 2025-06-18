@@ -17,7 +17,7 @@ const Booking = () => {
                 Schedule a consultation with our expert team to explore tailor-made software solutions that best fit your needs. Benefit from our in-depth industry knowledge and cutting-edge technology to drive your business forward.  
                 </p>
               </div>
-            <div className='right' style={{ maxWidth: "75%",position: "relative", border: "1px dashed black", borderRadius: "25px", padding: 0, margin: "4rem", boxSizing: "border-box"}}>
+            <div className='right' style={{ marginLeft: "3rem", maxWidth: "75%",position: "relative", border: "1px dashed black", borderRadius: "25px", padding: 0, margin: "4rem", boxSizing: "border-box"}}>
               <BookingForm />
             </div>
           </div>         

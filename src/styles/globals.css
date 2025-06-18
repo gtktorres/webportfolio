@@ -86,7 +86,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../components/Project-Images/home-office.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../components/Project-Images/home-office.png');
   max-width: 100%;
   height: 100%;
   margin: 0;
