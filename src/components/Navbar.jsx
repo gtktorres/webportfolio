@@ -5,9 +5,10 @@ import NavItem from "./NavItem";
 
 const MENU_LIST = [
   { text: "", href: "/" },
-  { text: "Services", href: "/services" },
   { text: "About", href: "/about" },
+  { text: "Projects", href: "/projects" },
   { text: "Contact", href: "/contact" },
+  { text: "Services", href: "/services" },
   { text: "Book Now", href: "/booking" }
 ];
 
