@@ -38,7 +38,7 @@ const Services = () => {
                         ></Image>
                         <h2 style={{ marginTop: "2rem"}}>Frontend Website</h2>
                         <p style={{ marginTop: "2rem"}}>$499</p>
-                        <p style={{ marginTop: "2rem"}}>In 7 business days, a fully functioning web application with the appropriate client-curated requirements.</p>
+                        <p style={{ marginTop: "2rem"}}>In 7 business days, a fully functional web application with the appropriate client-curated requirements.</p>
                         <BookNow />
                         </div>
                         
@@ -50,7 +50,7 @@ const Services = () => {
                         ></Image>
                         <h2 style={{ marginTop: "2rem", marginLeft: "0.5rem"}}>Frontend Website with Authentication + RESTful APIs</h2>
                         <p style={{ marginTop: "2rem", marginLeft: "0.5rem"}}>$1149</p>
-                        <p style={{ marginTop: "2rem", marginLeft: "0.5rem"}}>In 14 business days, a fully functioning web application with the appropriate client-curated requirements. Including a backend that provides CRUD APIs, authentication, and authorization.</p>
+                        <p style={{ marginTop: "2rem", marginLeft: "0.5rem"}}>In 14 business days, a fully functional web application with the appropriate client-curated requirements. Including a backend that provides CRUD APIs, authentication, and authorization.</p>
                         <BookNow />
                         </div>
 
@@ -62,7 +62,7 @@ const Services = () => {
                                 ></Image>
                                 <h2 style={{ marginTop: "2rem"}}>Frontend Website with Auth + RESTful APIs + Validations + Third party APIs integration + DB design</h2>
                                 <p style={{ marginTop: "2rem"}}>$1854</p>
-                                <p style={{ marginTop: "2rem"}}>In 30 business days, a fully functioning web application with the appropriate client-curated requirements. Providing a backend with CRUD APIs, Authentication, and Authorization. Including Database design, API Validation, and 3rd Party API Integration.</p>
+                                <p style={{ marginTop: "2rem"}}>In 30 business days, a fully functional web application with the appropriate client-curated requirements. Providing a backend with CRUD APIs, Authentication, and Authorization. Including Database design, API Validation, and 3rd Party API Integration.</p>
                                 <BookNow /> 
                             </div>                      
                         </div>
