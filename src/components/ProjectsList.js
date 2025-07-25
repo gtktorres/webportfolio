@@ -12,9 +12,9 @@ import Image from "next/image";
 
 const ProjectsList = () => {
     return (
-      <div className="Projects" style={{ maxWidth: '75%',backgroundColor: 'hsla(240, 11%, 93%, 0.902)', padding: '2rem' }}>
+      <div className="Projects" style={{ maxWidth: '75%',backgroundColor: 'hsla(240, 11%, 93%, 0.902)'}}>
           <h5>Projects</h5>
-        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', padding: '2rem' }}>
+        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', overflow: 'hidden'}}>
           <h3>
              Commerce Management Solution – IN PROGRESS
             <Link href="https://github.com/gtktorres/ComMan">
@@ -29,9 +29,9 @@ const ProjectsList = () => {
           >
             <Image
               src={CommerceManagement}
-              width="300"
-              height="300"
+              width="300" height="200"
               alt="Commerce Management Solution"
+
             />
           </div>
           <ul>
@@ -47,7 +47,7 @@ const ProjectsList = () => {
             </li>
           </ul>
         </div>
-        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', padding: '2rem' }}>
+        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', overflow: 'hidden'}}>
           <h3>
             Old-School DnD Interactive Story
             <Link href="https://github.com/gtktorres/StoneMarbel-Old-School-MERNG">
@@ -62,8 +62,7 @@ const ProjectsList = () => {
           >
             <Image
               src={InteractiveStory}
-              width="300"
-              height="300"
+              width="300" height="200"
               alt="old-school DnD"
             />
           </div>
@@ -80,7 +79,7 @@ const ProjectsList = () => {
             </li>
           </ul>
         </div>
-        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', padding: '2rem' }}>
+        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', overflow: 'hidden'}}>
                 <h3>
                   Making Graphs More Accessible
                   <Link href="https://github.com/gtktorres/Making-Graphs-Accessible">
@@ -93,7 +92,7 @@ const ProjectsList = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <Image src={Graphs} height="300" alt="Make Graphs Accessible" />
+                    <Image src={Graphs} width="300" height="200" alt="Make Graphs Accessible" />
                   </div>
                   <ul>
                     <li>
@@ -110,7 +109,7 @@ const ProjectsList = () => {
                     </li>
                   </ul>
             </div>
-        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', padding: '2rem' }}>
+        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', overflow: 'hidden'}}>
                 <h3>
                 Javascript Automation for GW Purchases
                   <Link href="https://github.com/gtktorres/Javascript-Automation-for-GW-Purchases">
@@ -123,7 +122,7 @@ const ProjectsList = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <Image src={Warhammer} height="300" alt="JS Automation" />
+                    <Image src={Warhammer} width="300" height="200" alt="JS Automation" />
                   </div>
                   <ul>
                     <li>
@@ -137,7 +136,7 @@ const ProjectsList = () => {
                     </li>
                   </ul>
             </div>    
-        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', padding: '2rem' }}>
+        <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', overflow: 'hidden'}}>
                 <h3>
                   Toxic Comment Model
                   <Link href="https://github.com/GueTorres/Toxic-Comment-Model">
@@ -150,7 +149,7 @@ const ProjectsList = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <Image src={Toxic} height="300" alt="Toxic Model" />
+                    <Image src={Toxic} width="300" height="200" alt="Toxic Model" />
                   </div>
                   <ul>
                     <li>
@@ -166,7 +165,7 @@ const ProjectsList = () => {
                     </li>
                   </ul>
             </div>
-            <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', padding: '2rem' }}>
+            <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', overflow: 'hidden'}}>
                 <h3>
                   Repaycycle
                   <Link href="https://github.com/GueTorres/RePayCycle">
@@ -179,7 +178,7 @@ const ProjectsList = () => {
                       justifyContent: "center",
                     }}
                   >
-                    <Image src={Repaycycle} height="300" alt="Repaycycle" />
+                    <Image src={Repaycycle} width="300" height="200" alt="Repaycycle" />
                   </div>   
                   <ul>
                     <li>

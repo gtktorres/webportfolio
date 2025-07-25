@@ -44,7 +44,7 @@ const About = () => {
       <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
             <div className="center" >
               <div><h2 style={{ color: "white", textAlign: "center"}}>Get Started</h2></div>
-              <div style={{ fontSize: "1.5em", fontWeight: "100"}}>
+              <div style={{ fontSize: "clamp(0.2rem, calc(7vw + 1rem), 1rem)", fontWeight: "100"}}>
                 <ViewServices />
               </div>  
             </div>                 

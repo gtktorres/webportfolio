@@ -252,9 +252,20 @@ header{
     margin-top: 1rem; /* Optional: adds some space above the grid */
 }
 
+@media screen and (max-width < 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      max-width: 100%; /* Full width of the container */
+      max-height: 100%;
+      justify-items: stretch;
+      margin-top: 1rem; /* Optional: adds some space above the grid */
+}
+  
+}
 .grid-item {
     border: 1px; /* Optional: adds a border for visibility */
-    padding: 10px; /* Optional: adds padding inside each item */
+    padding: min(5em, 8%); /* Optional: adds padding inside each item */
     text-align: center; /* Centers text and button */
     min-width: 300px;
     max-width: 100%;

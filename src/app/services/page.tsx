@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import BookNow from '@/components/BookNow';
-import FooterButotn from '@/components/FooterButton';
+import FooterButton from '@/components/FooterButton';
 
 import Deskspace from '../../components/Project-Images/deskspace.png'
 import Keyboard from '../../components/Project-Images/keyboard-black.png';
@@ -15,7 +15,7 @@ const Services = () => {
             <header>
                    <div className='container-services-header'>
                     <div className='left'>
-                        <h2 style={{whiteSpace: "nowrap", fontSize: "3rem"}}>Services Provided</h2>
+                        <h2 style={{whiteSpace: "nowrap", fontSize: "clamp(1.8rem, calc(7vw + 1rem), 3.5rem)"}}>Services Provided</h2>
                     </div>
                 
                     <div className='right' style={{position: "relative"}}>
@@ -34,7 +34,7 @@ const Services = () => {
                         <Image 
                             src={Keyboard}
                             alt=''
-                            height={200}
+                            width="300" height="200"
                         ></Image>
                         <h2 style={{ marginTop: "2rem"}}>Frontend Website</h2>
                         <p style={{ marginTop: "2rem"}}>$499</p>
@@ -46,7 +46,7 @@ const Services = () => {
                         <Image 
                             src={Laptop}
                             alt=''
-                            height={200}
+                            width="300" height="200"
                         ></Image>
                         <h2 style={{ marginTop: "2rem", marginLeft: "0.5rem"}}>Frontend Website with Authentication + RESTful APIs</h2>
                         <p style={{ marginTop: "2rem", marginLeft: "0.5rem"}}>$1149</p>
@@ -58,7 +58,7 @@ const Services = () => {
                                 <Image 
                                     src={Laptops}
                                     alt=''
-                                    height={200}
+                                    width="300" height="200"
                                 ></Image>
                                 <h2 style={{ marginTop: "2rem"}}>Frontend Website with Auth + RESTful APIs + Validations + Third party APIs integration + DB design</h2>
                                 <p style={{ marginTop: "2rem"}}>$1854</p>
@@ -71,9 +71,9 @@ const Services = () => {
             </main>
             <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "100%", maxHeight: "100%", maxWidth: "100%", height: "100vh" }}>            
                 <div className="center" >
-                    <h2 style={{ color: "white", width: "100%", whiteSpace: "nowrap", fontSize: "4em"}}>Schedule a complimentary consultation</h2>
-                    <div style={{ fontSize: "1.5em", fontWeight: "100", display: "flex", justifyContent: "center", alignItems: "center"}}>
-                        <FooterButotn />
+                    <h2 style={{ color: "white", width: "100%", whiteSpace: "nowrap", fontSize: "clamp(1.8rem, calc(7vw + 1rem), 4rem)"}}>Schedule a complimentary consultation</h2>
+                    <div style={{ fontSize: "clamp(0.5rem, calc(7vw + 1rem), 1rem)", fontWeight: "100", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <FooterButton />
                     </div>  
                 </div>
             </footer>

@@ -31,7 +31,7 @@ const ContactForm = () => {
         <form ref={formRef}>
               <div className="Contact" style={{ marginLeft: "3rem"}}>
                 <div>
-                  <h2 style={{fontSize: "4em"}}>Contact Us</h2>
+                  <h2>Contact Us</h2>
                   <br />
                   <p>If you’re interested in collaborating, please provide your information, and we will contact you soon. We look forward to connecting with you.</p>
                   <br />
@@ -137,7 +137,7 @@ const ContactForm = () => {
                     <button
                     type="submit"
                     style={{ 
-                      fontSize: "1.5em",
+                      fontSize: "clamp(0.5rem, calc(7vw + 1rem), 1.5rem)",
                       fontWeight: "100",
                       textAlign: "center",
                       color: "hsla(0,0%,100%,1)",
@@ -148,7 +148,6 @@ const ContactForm = () => {
                       backgroundColor: "hsla(0,0%,0%,1)",
                       padding: "1rem 2rem",
                       display: "block",
-                      width: "25%",
                       height: "5rem",
                       cursor: "pointer"
                     }}
