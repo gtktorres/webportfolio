@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import LearnMore from '@/components/LearnMore';
+import '../styles/globals.css';
+import LearnMore from '../components/LearnMore.js';
 
 export default function page() {
   return (
@@ -17,4 +17,4 @@ export default function page() {
       </main>
     </div>
   );
-}
+};
