@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
-import BookNow from '@/components/BookNow';
-import FooterButton from '@/components/FooterButton';
+import BookNow from '../../components/BookNow.js';
+import FooterButton from '../../components/FooterButton.js';
 
 import Deskspace from '../../components/Project-Images/deskspace.png'
 import Keyboard from '../../components/Project-Images/keyboard-black.png';

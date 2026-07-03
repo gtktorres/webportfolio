@@ -2,7 +2,7 @@ import React from "react";
 import Keyboard from '../../components/Project-Images/soft corner keyboard.png';
 import Deskspace from '../../components/Project-Images/deskspace.png';
 import Image from "next/image";
-import ViewServices from "@/components/ViewServices";
+import ViewServices from '../../components/ViewServices';
 
 const About = () => {
     return (
