@@ -4,10 +4,10 @@ import '../../styles/client.css'
 import Link from "next/link";
 import Graphs from "../../components/Project-Images/graph_access.png";
 import Warhammer from "../../components/Project-Images/warhammer.png";
-import Toxic from "../../components/Project-Images/toxic.png";
-import Repaycycle from "../../components//Project-Images/repaycycle.png";
-import InteractiveStory from "../../components//Project-Images/InteractiveStory.png";
-import github from "../../components//Project-Images/github.ico";
+import Toxic from "../../components/Project-Images/Toxic.png";
+import Repaycycle from "../../components/Project-Images/repaycycle.png";
+import InteractiveStory from "../../components/Project-Images/InteractiveStory.png";
+import github from "../../components/Project-Images/github.ico";
 import Image from "next/image";
 import styles from '../../styles/page.module.css';
 
