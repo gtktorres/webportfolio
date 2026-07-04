@@ -6,7 +6,7 @@ import Warhammer from "../public/Project-Images/warhammer.png";
 import Toxic from "../public/Project-Images/toxic.png";
 import Repaycycle from "../public//Project-Images/repaycycle.png";
 import InteractiveStory from "../public//Project-Images/InteractiveStory.png";
-import CommerceManagement from "../public//Project-Images/in progress.png";
+import CommerceManagement from "../public//Project-Images/artgalproject.png";
 import github from "../public//Project-Images/github.ico";
 import Image from "next/image";
 
@@ -16,9 +16,9 @@ const ProjectsList = () => {
           <h5>Projects</h5>
         <div className="Border" style={{ backgroundColor: 'hsla(240, 11%, 93%, 0.902)', overflow: 'hidden'}}>
           <h3>
-             Commerce Management Solution – IN PROGRESS
-            <Link href="https://github.com/gtktorres/ComMan">
-              <Image src={github} height="25" alt="Commerce Management Solution" />{" "}
+             Art Gallery Commerce Solution
+            <Link href="https://github.com/gtktorres/moore-gallery-project">
+              <Image src={github} height="25" alt="Art Gallery Commerce Solution" />{" "}
             </Link>
           </h3>
           <div
@@ -30,7 +30,7 @@ const ProjectsList = () => {
             <Image
               src={CommerceManagement}
               width="300" height="200"
-              alt="Commerce Management Solution"
+              alt="Art Gallery Commerce Solution"
 
             />
           </div>
@@ -41,7 +41,7 @@ const ProjectsList = () => {
               includes an inventory management system to help store owners keep track of their products.
             </li>
             <li>
-              With C#, HTML and CSS for the frontend and backend and MySQL and MSSMS for the database, 
+              With C#, HTML and CSS for the frontend and backend and SQL and MSSMS for the database, 
               this application will provide a comprehensive solution for both customers and store owners 
               by keeping track of inventory and sales.
             </li>
