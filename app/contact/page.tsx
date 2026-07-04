@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from "next/image";
-import Laptop from "../../public/Project-Images/laptop-image-contact.png";
 import ContactForm from '../../components/ContactForm';
 
 export default function Contact() {
@@ -10,7 +9,7 @@ export default function Contact() {
           <div className='container-contact'>
             <ContactForm />
             <Image
-              src={Laptop}
+              src="../../public/Project-Images/laptop-image-contact.png"
               alt="Laptop Image"
               width={500}
               height={500}

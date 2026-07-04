@@ -1,6 +1,4 @@
 import React from "react";
-import Keyboard from '../../public/Project-Images/soft-corner-keyboard.png';
-import Deskspace from '../../public/Project-Images/deskspace.png';
 import Image from "next/image";
 import ViewServices from '../../components/ViewServices';
 
@@ -31,7 +29,7 @@ const About = () => {
             </div>
             <div>
               <Image
-                src={Keyboard}
+                src="../../public/Project-Images/soft-corner-keyboard.png"
                 alt="Soft Corner Keyboard"
                 width={500}
                 height={500}
@@ -41,7 +39,7 @@ const About = () => {
           </div>         
         </main>
       
-      <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
+      <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${'../../public/Project-Images/deskspace.png'}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: "100vh" }}>            
             <div className="center" >
               <div><h2 style={{ color: "white", textAlign: "center"}}>Get Started</h2></div>
               <div style={{ fontSize: "clamp(0.2rem, calc(7vw + 1rem), 1rem)", fontWeight: "100"}}>

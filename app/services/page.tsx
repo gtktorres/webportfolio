@@ -4,11 +4,6 @@ import Image from 'next/image';
 import BookNow from '../../components/BookNow.js';
 import FooterButton from '../../components/FooterButton.js';
 
-import Deskspace from '../../public/Project-Images/deskspace.png'
-import Keyboard from '../../public/Project-Images/keyboard-black.png';
-import Laptop from '../../public/Project-Images/macbook.png';
-import Laptops from '../../public/Project-Images/macbooks.png';
-
 const Services = () => {
     return(
         <div style={{ background: 'hsla(240, 11%, 93%, 1)' }}>
@@ -32,7 +27,7 @@ const Services = () => {
                         
                         <div className='grid-item' style={{ marginLeft: "5rem"}}>                    
                         <Image 
-                            src={Keyboard}
+                            src='../../public/Project-Images/keyboard-black.png'
                             alt=''
                             width="300" height="200"
                         ></Image>
@@ -44,7 +39,7 @@ const Services = () => {
                         
                         <div className='grid-item' style={{ marginLeft: "1rem", marginRight: "1rem"}}>
                         <Image 
-                            src={Laptop}
+                            src='../../public/Project-Images/macbook.png'
                             alt=''
                             width="300" height="200"
                         ></Image>
@@ -56,7 +51,7 @@ const Services = () => {
 
                             <div className='grid-item' style={{ marginRight: "5rem", justifySelf: "end"}}>
                                 <Image 
-                                    src={Laptops}
+                                    src='../../public/Project-Images/macbooks.png'
                                     alt=''
                                     width="300" height="200"
                                 ></Image>
@@ -69,7 +64,7 @@ const Services = () => {
                     
                                                                                    
             </main>
-            <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${Deskspace.src}')`, backgroundRepeat: "no-repeat", backgroundSize: "100%", maxHeight: "100%", maxWidth: "100%", height: "100vh" }}>            
+            <footer style={{ position: "relative", backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(''../../public/Project-Images/deskspace.png'')`, backgroundRepeat: "no-repeat", backgroundSize: "100%", maxHeight: "100%", maxWidth: "100%", height: "100vh" }}>            
                 <div className="center" >
                     <h2 style={{ color: "white", width: "100%", whiteSpace: "nowrap", fontSize: "clamp(1.8rem, calc(7vw + 1rem), 4rem)"}}>Schedule a complimentary consultation</h2>
                     <div style={{ fontSize: "clamp(0.5rem, calc(7vw + 1rem), 1rem)", fontWeight: "100", display: "flex", justifyContent: "center", alignItems: "center"}}>
