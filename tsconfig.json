@@ -36,6 +36,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "globals.d.ts",
     ".next/types/**/*.ts",
     "src/app/contact/page.tsx",
     "src/components/Navbar.jsx",

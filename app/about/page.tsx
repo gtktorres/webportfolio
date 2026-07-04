@@ -1,6 +1,5 @@
-import React from "react";
-import Image from "next/image";
-import ViewServices from '../../components/ViewServices';
+import Image from 'next/image';
+import ViewServices from '../../components/ViewServices.js';
 
 const About = () => {
     return (

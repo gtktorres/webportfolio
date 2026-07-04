@@ -1,5 +1,5 @@
 import styles from '../../styles/page.module.css'
-import ProjectsList from '../../components/ProjectsList';
+import ProjectsList from '../../components/ProjectsList.js';
 
 const Projects = () => {
     return (

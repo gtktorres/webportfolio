@@ -4,7 +4,7 @@ import '../styles/client.css'
 
 const Navbar = dynamic(
   () => {
-    return import('../components/Navbar');
+    return import('../components/Navbar.jsx');
   }
 );
 

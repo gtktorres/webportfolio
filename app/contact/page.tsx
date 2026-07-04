@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import ContactForm from '../../components/ContactForm';
+import ContactForm from '../../components/ContactForm.js';
 
 export default function Contact() {
     
