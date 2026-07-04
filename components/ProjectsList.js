@@ -1,13 +1,13 @@
 "use client"; // this is a client component 👈🏽
 import '../styles/client.css';
 import Link from "next/link";
-import Graphs from "../components/Project-Images/graph_access.png";
-import Warhammer from "../components/Project-Images/warhammer.png";
-import Toxic from "../components/Project-Images/toxic.png";
-import Repaycycle from "../components//Project-Images/repaycycle.png";
-import InteractiveStory from "../components//Project-Images/InteractiveStory.png";
-import CommerceManagement from "../components//Project-Images/in progress.png";
-import github from "../components//Project-Images/github.ico";
+import Graphs from "../public/Project-Images/graph_access.png";
+import Warhammer from "../public/Project-Images/warhammer.png";
+import Toxic from "../public/Project-Images/toxic.png";
+import Repaycycle from "../public//Project-Images/repaycycle.png";
+import InteractiveStory from "../public//Project-Images/InteractiveStory.png";
+import CommerceManagement from "../public//Project-Images/in progress.png";
+import github from "../public//Project-Images/github.ico";
 import Image from "next/image";
 
 const ProjectsList = () => {
