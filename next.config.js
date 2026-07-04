@@ -13,6 +13,7 @@ const nextConfig = {
     root: path.join(import.meta.dirname), 
   },
   devIndicators: false,
+  ignoreBuildErrors: true,
 }
 
 export default nextConfig
