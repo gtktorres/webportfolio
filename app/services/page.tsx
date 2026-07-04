@@ -4,10 +4,10 @@ import Image from 'next/image';
 import BookNow from '../../components/BookNow.js';
 import FooterButton from '../../components/FooterButton.js';
 
-import Deskspace from '../../components/Project-Images/deskspace.png'
-import Keyboard from '../../components/Project-Images/keyboard-black.png';
-import Laptop from '../../components/Project-Images/macbook.png';
-import Laptops from '../../components/Project-Images/macbooks.png';
+import Deskspace from '../../public/Project-Images/deskspace.png'
+import Keyboard from '../../public/Project-Images/keyboard-black.png';
+import Laptop from '../../public/Project-Images/macbook.png';
+import Laptops from '../../public/Project-Images/macbooks.png';
 
 const Services = () => {
     return(

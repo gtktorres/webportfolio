@@ -1,6 +1,6 @@
 import React from "react";
-import Keyboard from '../../components/Project-Images/soft-corner-keyboard.png';
-import Deskspace from '../../components/Project-Images/deskspace.png';
+import Keyboard from '../../public/Project-Images/soft-corner-keyboard.png';
+import Deskspace from '../../public/Project-Images/deskspace.png';
 import Image from "next/image";
 import ViewServices from '../../components/ViewServices';
 

@@ -11,9 +11,10 @@ const nextConfig = {
    turbopack: {
     // Explicitly forces Turbopack to only watch your actual project folder
     root: path.join(import.meta.dirname), 
+    ignoreBuildErrors: true,
+    
   },
   devIndicators: false,
-  ignoreBuildErrors: true,
 }
 
 export default nextConfig

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import Laptop from "../../components/Project-Images/laptop-image-contact.png";
+import Laptop from "../../public/Project-Images/laptop-image-contact.png";
 import ContactForm from '../../components/ContactForm';
 
 export default function Contact() {
