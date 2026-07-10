@@ -12,8 +12,8 @@ export const metadata = {
   icons: {
     icon: 'https://em-content.zobj.net/thumbs/120/twitter/348/sunrise-over-mountains_1f304.png'
   },
-  title: 'Guevara Torres - Fullstack Developer',
-  keywords: ['Portfolio', 'Guevara Torres', 'Software Developer'],
+  title: 'Gabe Torres - Fullstack Developer',
+  keywords: ['Portfolio', 'Gabe Torres', 'Software Developer'],
   description: 'Portfolio',
 }
 

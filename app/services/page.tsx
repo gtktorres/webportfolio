@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-
 import BookNow from '../../components/BookNow.js';
 import FooterButton from '../../components/FooterButton.js';
 
@@ -27,8 +26,8 @@ const Services = () => {
                         
                         <div className='grid-item' style={{ marginLeft: "5rem"}}>                    
                         <Image 
-                            src='../../public/Project-Images/keyboard-black.png'
-                            alt=''
+                            src='../../public/Project-Images/soft-corner-keyboard.png'
+                            alt='Black Keyboard on a Desk'
                             width="300" height="200"
                         ></Image>
                         <h2 style={{ marginTop: "2rem"}}>Frontend Website</h2>
@@ -40,7 +39,7 @@ const Services = () => {
                         <div className='grid-item' style={{ marginLeft: "1rem", marginRight: "1rem"}}>
                         <Image 
                             src='../../public/Project-Images/macbook.png'
-                            alt=''
+                            alt='Macbook on a Desk'
                             width="300" height="200"
                         ></Image>
                         <h2 style={{ marginTop: "2rem", marginLeft: "0.5rem"}}>Frontend Website with Authentication + RESTful APIs</h2>
@@ -52,7 +51,7 @@ const Services = () => {
                             <div className='grid-item' style={{ marginRight: "5rem", justifySelf: "end"}}>
                                 <Image 
                                     src='../../public/Project-Images/macbooks.png'
-                                    alt=''
+                                    alt='Macbooks on a Desk'
                                     width="300" height="200"
                                 ></Image>
                                 <h2 style={{ marginTop: "2rem"}}>Frontend Website with Auth + RESTful APIs + Validations + Third party APIs integration + DB design</h2>
