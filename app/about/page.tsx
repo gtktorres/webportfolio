@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import ViewServices from '../../components/ViewServices.js';
+import keyboardImage from '../../public/Project-Images/soft-corner-keyboard.png';
 
 const About = () => {
     return (
@@ -28,7 +29,7 @@ const About = () => {
             </div>
             <div>
               <Image
-                src="../../public/Project-Images/soft-corner-keyboard.png"
+                src={keyboardImage}
                 alt="Soft Corner Keyboard"
                 width={500}
                 height={500}
