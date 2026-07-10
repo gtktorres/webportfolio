@@ -20,7 +20,7 @@ const Navbar = () => {
     <header>
       <nav className={`nav`} style={{ background: 'hsla(240, 11%, 93%, 1)' }}>
         <Link href={"/"}>
-            <p className="logo" style={{marginLeft: "1rem", fontSize: "1.5rem"}}>Guevara Torres - Fullstack Developer</p>
+            <p className="logo" style={{marginLeft: "1rem", fontSize: "1.5rem"}}>Gabe Torres - Fullstack Developer</p>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
