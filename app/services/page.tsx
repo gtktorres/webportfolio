@@ -1,8 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import KeyboardImage from '../../public/Project-Images/soft-corner-keyboard.png';
-import MacbooksImage from '../../public/Project-Images/macbooks.png';
-import MacbookImage from '../../public/Project-Images/macbook.png';
 import BookNow from '../../components/BookNow.js';
 import FooterButton from '../../components/FooterButton.js';
 
@@ -29,7 +26,7 @@ const Services = () => {
                         
                         <div className='grid-item' style={{ marginLeft: "5rem"}}>                    
                         <Image 
-                            src={KeyboardImage}
+                            src='../../public/Project-Images/soft-corner-keyboard.png'
                             alt='Black Keyboard on a Desk'
                             width="300" height="200"
                         ></Image>
@@ -41,7 +38,7 @@ const Services = () => {
                         
                         <div className='grid-item' style={{ marginLeft: "1rem", marginRight: "1rem"}}>
                         <Image 
-                            src={MacbookImage}
+                            src='../../public/Project-Images/macbook.png'
                             alt='Macbook on a Desk'
                             width="300" height="200"
                         ></Image>
@@ -53,7 +50,7 @@ const Services = () => {
 
                             <div className='grid-item' style={{ marginRight: "5rem", justifySelf: "end"}}>
                                 <Image 
-                                    src={MacbooksImage}
+                                    src='../../public/Project-Images/macbooks.png'
                                     alt='Macbooks on a Desk'
                                     width="300" height="200"
                                 ></Image>
